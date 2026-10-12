@@ -1,0 +1,5125 @@
+{
+ "version": 1,
+ "meta": {
+  "name": "Casa de campo térrea em U — Raio-X Arquitetônico",
+  "units": "m",
+  "unitsScale": 1,
+  "origin": "Canto noroeste externo da casa. X = leste, Z = sul (frente), Y = altura. Norte = −Z.",
+  "source": "Planta baixa, fachadas, planta de cobertura e planta mobiliada geradas por IA a partir de uma foto de referência (arquivos em public/assets).",
+  "disclaimer": "Visualização arquitetônica. Elementos não documentados são estimativos.",
+  "orientation": "Frente (sul) = fachada com a porta de entrada; fundos = norte; lateral direita = leste (suíte)."
+ },
+ "reference": {
+  "image": "assets/planta.png",
+  "furnished": "assets/planta-mobiliada.png",
+  "roof": "assets/cobertura.png",
+  "sizePx": [
+   1448,
+   1086
+  ],
+  "originPx": [
+   122,
+   122
+  ],
+  "mPerPx": [
+   0.013101,
+   0.015948
+  ],
+  "note": "O desenho possui escalas diferentes em X e Z (≈76,3 px/m × ≈62,8 px/m) para respeitar as cotas totais 15,80 × 12,20 m."
+ },
+ "params": {
+  "wallExtT": 0.25,
+  "wallIntT": 0.12,
+  "wallMidT": 0.15,
+  "roofThick": 0.16,
+  "eave": 0.45,
+  "floorThick": 0.02,
+  "slabThick": 0.15,
+  "footingW": 0.55,
+  "footingDepth": 0.6,
+  "doorH": 2.1,
+  "doorW": 0.8,
+  "entryDoorH": 2.2,
+  "ridgeMax": 4.9,
+  "ceilingBase": 2.8,
+  "eyeHeight": 1.6
+ },
+ "levels": [
+  {
+   "id": "terreo",
+   "name": "Térreo",
+   "elevation": 0.0
+  }
+ ],
+ "walls": [
+  {
+   "id": "P-N",
+   "a": [
+    0.125,
+    0.125
+   ],
+   "b": [
+    15.675,
+    0.125
+   ],
+   "t": 0.25,
+   "tClass": "ext",
+   "kind": "ext",
+   "name": "Parede externa norte (fundos)",
+   "material": "reboco",
+   "openings": [
+    {
+     "id": "J-N1",
+     "type": "window",
+     "center": 1.55,
+     "w": 1.05,
+     "h": 1.4,
+     "sill": 0.9,
+     "material": "aluminio-preto",
+     "src": "confirmado",
+     "name": "Janela do Quarto 2 (norte)",
+     "note": "Posição e largura lidas da planta; altura estimada."
+    },
+    {
+     "id": "J-N2",
+     "type": "window",
+     "center": 4.93,
+     "w": 1.05,
+     "h": 1.4,
+     "sill": 0.9,
+     "material": "aluminio-preto",
+     "src": "confirmado",
+     "name": "Janela da sala (norte)",
+     "note": "Posição e largura lidas da planta; altura estimada."
+    },
+    {
+     "id": "J-N3",
+     "type": "window",
+     "center": 10.91,
+     "w": 0.9,
+     "h": 1.0,
+     "sill": 1.1,
+     "material": "aluminio-preto",
+     "src": "confirmado",
+     "name": "Janela da cozinha (norte)",
+     "note": "Posição e largura lidas da planta; altura estimada."
+    },
+    {
+     "id": "J-N4",
+     "type": "window",
+     "center": 13.83,
+     "w": 0.9,
+     "h": 0.8,
+     "sill": 1.4,
+     "material": "aluminio-preto",
+     "src": "confirmado",
+     "name": "Janela da lavanderia (norte)",
+     "note": "Janela alta (fachada de fundos). Altura estimada."
+    }
+   ],
+   "src": "confirmado",
+   "note": "",
+   "top": {
+    "mode": "profile",
+    "profile": [
+     [
+      -0.125,
+      2.845
+     ],
+     [
+      3.275,
+      3.185
+     ],
+     [
+      3.275,
+      4.7188
+     ],
+     [
+      12.975,
+      4.7188
+     ],
+     [
+      12.975,
+      3.4
+     ],
+     [
+      15.675,
+      3.13
+     ]
+    ],
+    "roofs": [
+     "RC",
+     "RN",
+     "RW"
+    ]
+   },
+   "extA": 0.125,
+   "extB": 0.125,
+   "rooms": [
+    "R-SALA"
+   ]
+  },
+  {
+   "id": "P-L",
+   "a": [
+    15.675,
+    0.125
+   ],
+   "b": [
+    15.675,
+    10.225
+   ],
+   "t": 0.25,
+   "tClass": "ext",
+   "kind": "ext",
+   "name": "Parede externa leste",
+   "material": "reboco",
+   "openings": [
+    {
+     "id": "J-L1",
+     "type": "window",
+     "center": 1.57,
+     "w": 0.9,
+     "h": 1.0,
+     "sill": 1.1,
+     "material": "aluminio-preto",
+     "src": "confirmado",
+     "name": "Janela da lavanderia (leste)",
+     "note": "Altura estimada."
+    },
+    {
+     "id": "J-L2",
+     "type": "window",
+     "center": 4.35,
+     "w": 0.9,
+     "h": 0.7,
+     "sill": 1.5,
+     "material": "aluminio-preto",
+     "src": "confirmado",
+     "name": "Janela do banheiro da suíte (leste)",
+     "note": "Janela alta, altura estimada."
+    },
+    {
+     "id": "J-L3",
+     "type": "window",
+     "center": 8.39,
+     "w": 2.8,
+     "h": 1.72,
+     "sill": 0.4,
+     "material": "aluminio-preto",
+     "src": "confirmado",
+     "name": "Janela de canto da suíte (leste)",
+     "note": "Janela panorâmica (planta); altura/peitoril lidos da fachada."
+    }
+   ],
+   "src": "confirmado",
+   "note": "",
+   "top": {
+    "mode": "profile",
+    "profile": [
+     [
+      -0.0,
+      3.1425
+     ],
+     [
+      6.975,
+      3.1425
+     ],
+     [
+      6.975,
+      2.8275
+     ],
+     [
+      10.1,
+      2.8275
+     ]
+    ],
+    "roofs": [
+     "RN",
+     "RS"
+    ]
+   },
+   "extA": 0.0,
+   "extB": 0.0,
+   "rooms": [
+    "R-BSU"
+   ]
+  },
+  {
+   "id": "P-SS",
+   "a": [
+    15.675,
+    10.225
+   ],
+   "b": [
+    11.15,
+    10.225
+   ],
+   "t": 0.25,
+   "tClass": "ext",
+   "kind": "ext",
+   "name": "Parede externa sul da suíte",
+   "material": "reboco",
+   "openings": [
+    {
+     "id": "J-S1",
+     "type": "window",
+     "center": 1.58,
+     "w": 2.9,
+     "h": 1.72,
+     "sill": 0.4,
+     "material": "aluminio-preto",
+     "src": "confirmado",
+     "name": "Janela de canto da suíte (sul)",
+     "note": "Janela panorâmica em duas folhas; altura/peitoril lidos da fachada."
+    }
+   ],
+   "src": "confirmado",
+   "note": "",
+   "top": {
+    "mode": "profile",
+    "profile": [
+     [
+      -0.125,
+      2.815
+     ],
+     [
+      4.65,
+      3.2925
+     ]
+    ],
+    "roofs": [
+     "RS"
+    ]
+   },
+   "extA": 0.125,
+   "extB": 0.125,
+   "rooms": [
+    "R-SUI"
+   ]
+  },
+  {
+   "id": "P-SO",
+   "a": [
+    11.15,
+    10.225
+   ],
+   "b": [
+    11.15,
+    4.38
+   ],
+   "t": 0.25,
+   "tClass": "ext",
+   "kind": "ext",
+   "name": "Parede da suíte voltada ao pátio",
+   "material": "reboco",
+   "openings": [
+    {
+     "id": "P-SU1",
+     "type": "door",
+     "center": 1.38,
+     "w": 0.9,
+     "h": 2.1,
+     "sill": 0.0,
+     "material": "madeira-escura",
+     "src": "confirmado",
+     "name": "Porta da suíte para o pátio",
+     "passable": true,
+     "swing": "in"
+    }
+   ],
+   "src": "confirmado",
+   "note": "Espessura 25 cm estimada (desenho mostra parede espessa).",
+   "top": {
+    "mode": "profile",
+    "profile": [
+     [
+      -0.0,
+      3.28
+     ],
+     [
+      2.575,
+      3.28
+     ],
+     [
+      2.575,
+      3.4395
+     ],
+     [
+      5.845,
+      3.9954
+     ]
+    ],
+    "roofs": [
+     "RC",
+     "RS"
+    ]
+   },
+   "extA": 0.0,
+   "extB": 0.0,
+   "rooms": [
+    "R-SUI",
+    "R-PATIO"
+   ]
+  },
+  {
+   "id": "P-SN",
+   "a": [
+    11.15,
+    4.38
+   ],
+   "b": [
+    13.1,
+    4.38
+   ],
+   "t": 0.12,
+   "tClass": "int",
+   "kind": "int",
+   "name": "Parede norte da suíte",
+   "material": "reboco-int",
+   "openings": [
+    {
+     "id": "P-SU2",
+     "type": "door",
+     "center": 0.54,
+     "w": 0.8,
+     "h": 2.1,
+     "sill": 0.0,
+     "material": "madeira-clara",
+     "src": "confirmado",
+     "name": "Porta da suíte para a cozinha",
+     "passable": true,
+     "swing": "in"
+    }
+   ],
+   "src": "confirmado",
+   "note": "",
+   "top": {
+    "mode": "profile",
+    "profile": [
+     [
+      -0.125,
+      3.9954
+     ],
+     [
+      1.89,
+      3.9954
+     ]
+    ],
+    "roofs": [
+     "RC"
+    ]
+   },
+   "extA": 0.125,
+   "extB": -0.06,
+   "rooms": [
+    "R-SUI",
+    "R-COZ"
+   ]
+  },
+  {
+   "id": "P-CE",
+   "a": [
+    13.1,
+    0.125
+   ],
+   "b": [
+    13.1,
+    6.12
+   ],
+   "t": 0.12,
+   "tClass": "int",
+   "kind": "int",
+   "name": "Parede cozinha | lavanderia | banheiro da suíte",
+   "material": "reboco-int",
+   "openings": [
+    {
+     "id": "P-LAV",
+     "type": "door",
+     "center": 2.38,
+     "w": 0.8,
+     "h": 2.1,
+     "sill": 0.0,
+     "material": "madeira-clara",
+     "src": "confirmado",
+     "name": "Porta da lavanderia",
+     "passable": true,
+     "swing": "in"
+    },
+    {
+     "id": "P-BS",
+     "type": "door",
+     "center": 5.28,
+     "w": 0.7,
+     "h": 2.1,
+     "sill": 0.0,
+     "material": "madeira-clara",
+     "src": "confirmado",
+     "name": "Porta do banheiro da suíte",
+     "passable": true,
+     "swing": "in"
+    }
+   ],
+   "src": "confirmado",
+   "note": "",
+   "top": {
+    "mode": "profile",
+    "profile": [
+     [
+      0.125,
+      4.6975
+     ],
+     [
+      5.995,
+      3.6996
+     ]
+    ],
+    "roofs": [
+     "RC"
+    ]
+   },
+   "extA": -0.125,
+   "extB": 0.0,
+   "rooms": [
+    "R-COZ"
+   ]
+  },
+  {
+   "id": "P-LB",
+   "a": [
+    13.1,
+    3.15
+   ],
+   "b": [
+    15.675,
+    3.15
+   ],
+   "t": 0.12,
+   "tClass": "int",
+   "kind": "int",
+   "name": "Parede lavanderia | banheiro da suíte",
+   "material": "reboco-int",
+   "openings": [],
+   "src": "confirmado",
+   "note": "",
+   "top": {
+    "mode": "profile",
+    "profile": [
+     [
+      0.06,
+      3.394
+     ],
+     [
+      2.45,
+      3.155
+     ]
+    ],
+    "roofs": [
+     "RN"
+    ]
+   },
+   "extA": -0.06,
+   "extB": -0.125,
+   "rooms": [
+    "R-BSU",
+    "R-LAV"
+   ]
+  },
+  {
+   "id": "P-BSS",
+   "a": [
+    13.1,
+    6.12
+   ],
+   "b": [
+    15.675,
+    6.12
+   ],
+   "t": 0.12,
+   "tClass": "int",
+   "kind": "int",
+   "name": "Parede sul do banheiro da suíte",
+   "material": "reboco-int",
+   "openings": [],
+   "src": "confirmado",
+   "note": "",
+   "top": {
+    "mode": "profile",
+    "profile": [
+     [
+      -0.06,
+      3.406
+     ],
+     [
+      2.45,
+      3.155
+     ]
+    ],
+    "roofs": [
+     "RN"
+    ]
+   },
+   "extA": 0.06,
+   "extB": -0.125,
+   "rooms": [
+    "R-SUI",
+    "R-BSU"
+   ]
+  },
+  {
+   "id": "P-STUB",
+   "a": [
+    9.25,
+    0.125
+   ],
+   "b": [
+    9.25,
+    0.9
+   ],
+   "t": 0.15,
+   "tClass": "mid",
+   "kind": "stub",
+   "name": "Painel divisor sala | cozinha",
+   "material": "reboco-int",
+   "openings": [],
+   "src": "confirmado",
+   "note": "Trecho curto de parede entre sala e cozinha; o restante da divisa é aberto (linha tracejada).",
+   "top": {
+    "mode": "profile",
+    "profile": [
+     [
+      0.125,
+      4.6975
+     ],
+     [
+      0.775,
+      4.587
+     ]
+    ],
+    "roofs": [
+     "RC"
+    ]
+   },
+   "extA": -0.125,
+   "extB": 0.0,
+   "rooms": [
+    "R-SALA",
+    "R-COZ"
+   ]
+  },
+  {
+   "id": "P-VID",
+   "a": [
+    4.58,
+    5.5
+   ],
+   "b": [
+    11.15,
+    5.5
+   ],
+   "t": 0.12,
+   "tClass": "int",
+   "kind": "glazing",
+   "name": "Parede de vidro sala/cozinha | pátio",
+   "material": "reboco",
+   "openings": [
+    {
+     "id": "E-VID",
+     "type": "slider",
+     "center": 3.25,
+     "w": 6.03,
+     "h": 2.45,
+     "sill": 0.0,
+     "material": "aluminio-preto",
+     "src": "confirmado",
+     "name": "Esquadria de correr sala/cozinha para o pátio",
+     "note": "Quatro folhas de correr (planta). Vão contínuo sala + cozinha.",
+     "passable": true
+    }
+   ],
+   "src": "confirmado",
+   "note": "",
+   "top": {
+    "mode": "profile",
+    "profile": [
+     [
+      -0.125,
+      3.805
+     ],
+     [
+      6.445,
+      3.805
+     ]
+    ],
+    "roofs": [
+     "RC"
+    ]
+   },
+   "extA": 0.125,
+   "extB": -0.125,
+   "rooms": [
+    "R-PATIO",
+    "R-SALA"
+   ]
+  },
+  {
+   "id": "P-PO",
+   "a": [
+    4.58,
+    5.5
+   ],
+   "b": [
+    4.58,
+    12.075
+   ],
+   "t": 0.25,
+   "tClass": "ext",
+   "kind": "ext",
+   "name": "Parede oeste do pátio / leste do hall",
+   "material": "reboco",
+   "openings": [],
+   "src": "confirmado",
+   "note": "",
+   "top": {
+    "mode": "profile",
+    "profile": [
+     [
+      -0.0,
+      3.805
+     ],
+     [
+      4.15,
+      3.0995
+     ],
+     [
+      4.15,
+      3.85
+     ],
+     [
+      6.575,
+      3.6075
+     ]
+    ],
+    "roofs": [
+     "RC",
+     "RH"
+    ]
+   },
+   "extA": 0.0,
+   "extB": 0.0,
+   "rooms": [
+    "R-SALA",
+    "R-PATIO"
+   ]
+  },
+  {
+   "id": "P-HS",
+   "a": [
+    4.58,
+    12.075
+   ],
+   "b": [
+    2.165,
+    12.075
+   ],
+   "t": 0.25,
+   "tClass": "ext",
+   "kind": "ext",
+   "name": "Parede sul do hall (entrada)",
+   "material": "reboco",
+   "openings": [
+    {
+     "id": "P-ENT",
+     "type": "door",
+     "center": 0.63,
+     "w": 1.0,
+     "h": 2.2,
+     "sill": 0.0,
+     "material": "madeira-escura",
+     "src": "confirmado",
+     "name": "Porta de entrada (madeira)",
+     "note": "Porta pivotante em madeira com puxador vertical (fachada).",
+     "passable": true,
+     "swing": "in"
+    }
+   ],
+   "src": "confirmado",
+   "note": "",
+   "top": {
+    "mode": "profile",
+    "profile": [
+     [
+      -0.125,
+      3.6075
+     ],
+     [
+      2.54,
+      3.6075
+     ]
+    ],
+    "roofs": [
+     "RH"
+    ]
+   },
+   "extA": 0.125,
+   "extB": 0.125,
+   "rooms": [
+    "R-HALL"
+   ]
+  },
+  {
+   "id": "P-HO",
+   "a": [
+    2.165,
+    12.075
+   ],
+   "b": [
+    2.165,
+    9.5
+   ],
+   "t": 0.25,
+   "tClass": "ext",
+   "kind": "ext",
+   "name": "Parede oeste do hall",
+   "material": "reboco",
+   "openings": [
+    {
+     "id": "J-H1",
+     "type": "window",
+     "center": 1.27,
+     "w": 1.0,
+     "h": 1.5,
+     "sill": 0.6,
+     "material": "aluminio-preto",
+     "src": "confirmado",
+     "name": "Janela lateral do hall",
+     "note": "Iluminação lateral estreita (ficha). Altura estimada."
+    }
+   ],
+   "src": "confirmado",
+   "note": "",
+   "top": {
+    "mode": "profile",
+    "profile": [
+     [
+      -0.0,
+      3.6075
+     ],
+     [
+      2.0,
+      3.8075
+     ],
+     [
+      2.0,
+      3.8075
+     ],
+     [
+      2.425,
+      3.85
+     ],
+     [
+      2.425,
+      3.85
+     ],
+     [
+      2.575,
+      3.865
+     ]
+    ],
+    "roofs": [
+     "RH"
+    ]
+   },
+   "extA": 0.0,
+   "extB": 0.0,
+   "rooms": [
+    "R-HALL"
+   ]
+  },
+  {
+   "id": "P-Q3S",
+   "a": [
+    0.125,
+    9.5
+   ],
+   "b": [
+    2.165,
+    9.5
+   ],
+   "t": 0.25,
+   "tClass": "ext",
+   "kind": "ext",
+   "name": "Parede sul do Quarto 3",
+   "material": "reboco",
+   "openings": [
+    {
+     "id": "J-Q3S",
+     "type": "window",
+     "center": 1.05,
+     "w": 0.72,
+     "h": 0.9,
+     "sill": 1.1,
+     "material": "aluminio-preto",
+     "src": "confirmado",
+     "name": "Janela do Quarto 3 (sul)",
+     "note": "Janela pequena; altura estimada."
+    }
+   ],
+   "src": "confirmado",
+   "note": "",
+   "top": {
+    "mode": "profile",
+    "profile": [
+     [
+      -0.125,
+      2.845
+     ],
+     [
+      2.04,
+      3.0615
+     ]
+    ],
+    "roofs": [
+     "RW"
+    ]
+   },
+   "extA": 0.125,
+   "extB": 0.0,
+   "rooms": [
+    "R-Q3"
+   ]
+  },
+  {
+   "id": "P-HN",
+   "a": [
+    2.165,
+    9.5
+   ],
+   "b": [
+    4.58,
+    9.5
+   ],
+   "t": 0.15,
+   "tClass": "mid",
+   "kind": "int",
+   "name": "Parede norte do hall",
+   "material": "reboco-int",
+   "openings": [
+    {
+     "id": "P-HALL",
+     "type": "door",
+     "center": 1.88,
+     "w": 0.8,
+     "h": 2.1,
+     "sill": 0.0,
+     "material": "madeira-clara",
+     "src": "estimado",
+     "name": "Porta hall → circulação (ESTIMADA)",
+     "note": "O desenho não mostra passagem entre o hall e o restante da casa. Porta estimada para tornar o interior navegável.",
+     "passable": true,
+     "swing": "in"
+    }
+   ],
+   "src": "confirmado",
+   "note": "",
+   "top": {
+    "mode": "profile",
+    "profile": [
+     [
+      -0.0,
+      3.0615
+     ],
+     [
+      1.445,
+      3.206
+     ],
+     [
+      1.445,
+      3.125
+     ],
+     [
+      2.29,
+      3.125
+     ]
+    ],
+    "roofs": [
+     "RC",
+     "RW"
+    ]
+   },
+   "extA": 0.0,
+   "extB": -0.125,
+   "rooms": [
+    "R-HALL",
+    "R-Q3"
+   ]
+  },
+  {
+   "id": "P-O",
+   "a": [
+    0.125,
+    9.5
+   ],
+   "b": [
+    0.125,
+    0.125
+   ],
+   "t": 0.25,
+   "tClass": "ext",
+   "kind": "ext",
+   "name": "Parede externa oeste",
+   "material": "reboco",
+   "openings": [
+    {
+     "id": "J-O1",
+     "type": "window",
+     "center": 7.56,
+     "w": 1.4,
+     "h": 1.65,
+     "sill": 0.75,
+     "material": "aluminio-preto",
+     "src": "confirmado",
+     "name": "Janela do Quarto 2 (oeste)",
+     "note": "Janela vertical (fachada esquerda)."
+    },
+    {
+     "id": "J-O2",
+     "type": "window",
+     "center": 4.56,
+     "w": 0.88,
+     "h": 0.95,
+     "sill": 1.45,
+     "material": "aluminio-preto",
+     "src": "confirmado",
+     "name": "Janela do banheiro social (oeste)",
+     "note": "Janela pequena e alta (fachada esquerda)."
+    },
+    {
+     "id": "J-O3",
+     "type": "window",
+     "center": 1.79,
+     "w": 1.4,
+     "h": 1.65,
+     "sill": 0.75,
+     "material": "aluminio-preto",
+     "src": "confirmado",
+     "name": "Janela do Quarto 3 (oeste)",
+     "note": "Janela vertical (fachada esquerda)."
+    }
+   ],
+   "src": "confirmado",
+   "note": "",
+   "top": {
+    "mode": "profile",
+    "profile": [
+     [
+      -0.0,
+      2.8575
+     ],
+     [
+      9.375,
+      2.8575
+     ]
+    ],
+    "roofs": [
+     "RW"
+    ]
+   },
+   "extA": 0.0,
+   "extB": 0.0,
+   "rooms": [
+    "R-BSOC"
+   ]
+  },
+  {
+   "id": "P-Q2L",
+   "a": [
+    3.4,
+    0.125
+   ],
+   "b": [
+    3.4,
+    3.75
+   ],
+   "t": 0.15,
+   "tClass": "mid",
+   "kind": "int",
+   "name": "Parede Quarto 2 | sala",
+   "material": "reboco-int",
+   "openings": [],
+   "src": "confirmado",
+   "note": "",
+   "top": {
+    "mode": "profile",
+    "profile": [
+     [
+      0.125,
+      4.6975
+     ],
+     [
+      3.565,
+      4.1127
+     ]
+    ],
+    "roofs": [
+     "RC"
+    ]
+   },
+   "extA": -0.125,
+   "extB": -0.06,
+   "rooms": [
+    "R-Q2",
+    "R-SALA"
+   ]
+  },
+  {
+   "id": "P-Q2S",
+   "a": [
+    0.125,
+    3.75
+   ],
+   "b": [
+    3.61,
+    3.75
+   ],
+   "t": 0.12,
+   "tClass": "int",
+   "kind": "int",
+   "name": "Parede sul do Quarto 2 / norte do banheiro",
+   "material": "reboco-int",
+   "openings": [
+    {
+     "id": "P-Q2",
+     "type": "door",
+     "center": 2.82,
+     "w": 0.8,
+     "h": 2.1,
+     "sill": 0.0,
+     "material": "madeira-clara",
+     "src": "confirmado",
+     "name": "Porta do Quarto 2",
+     "passable": true,
+     "swing": "in"
+    }
+   ],
+   "src": "confirmado",
+   "note": "",
+   "top": {
+    "mode": "profile",
+    "profile": [
+     [
+      0.125,
+      2.87
+     ],
+     [
+      3.275,
+      3.185
+     ],
+     [
+      3.275,
+      4.1025
+     ],
+     [
+      3.485,
+      4.1025
+     ],
+     [
+      3.485,
+      4.1025
+     ],
+     [
+      3.56,
+      4.1025
+     ]
+    ],
+    "roofs": [
+     "RC",
+     "RW"
+    ]
+   },
+   "extA": -0.125,
+   "extB": 0.075,
+   "rooms": [
+    "R-BSOC",
+    "R-Q2"
+   ]
+  },
+  {
+   "id": "P-CE1",
+   "a": [
+    3.61,
+    3.75
+   ],
+   "b": [
+    3.61,
+    5.93
+   ],
+   "t": 0.15,
+   "tClass": "mid",
+   "kind": "int",
+   "name": "Parede da circulação (leste, trecho norte)",
+   "material": "reboco-int",
+   "openings": [],
+   "src": "confirmado",
+   "note": "",
+   "top": {
+    "mode": "profile",
+    "profile": [
+     [
+      -0.0,
+      4.1025
+     ],
+     [
+      2.18,
+      3.7319
+     ]
+    ],
+    "roofs": [
+     "RC"
+    ]
+   },
+   "extA": 0.0,
+   "extB": 0.0,
+   "rooms": [
+    "R-CIRC",
+    "R-SALA"
+   ]
+  },
+  {
+   "id": "P-CE2",
+   "a": [
+    3.61,
+    7.9
+   ],
+   "b": [
+    3.61,
+    9.5
+   ],
+   "t": 0.15,
+   "tClass": "mid",
+   "kind": "int",
+   "name": "Parede leste do Quarto 3 (trecho sul)",
+   "material": "reboco-int",
+   "openings": [],
+   "src": "confirmado",
+   "note": "",
+   "top": {
+    "mode": "profile",
+    "profile": [
+     [
+      -0.0,
+      3.397
+     ],
+     [
+      1.525,
+      3.1378
+     ]
+    ],
+    "roofs": [
+     "RC"
+    ]
+   },
+   "extA": 0.0,
+   "extB": -0.075,
+   "rooms": [
+    "R-Q3",
+    "R-SALA"
+   ]
+  },
+  {
+   "id": "P-BE",
+   "a": [
+    2.5,
+    3.75
+   ],
+   "b": [
+    2.5,
+    5.95
+   ],
+   "t": 0.12,
+   "tClass": "int",
+   "kind": "int",
+   "name": "Parede banheiro social | circulação",
+   "material": "reboco-int",
+   "openings": [
+    {
+     "id": "P-BSO",
+     "type": "door",
+     "center": 1.65,
+     "w": 0.8,
+     "h": 2.1,
+     "sill": 0.0,
+     "material": "madeira-clara",
+     "src": "confirmado",
+     "name": "Porta do banheiro social",
+     "passable": true,
+     "swing": "in"
+    }
+   ],
+   "src": "confirmado",
+   "note": "",
+   "top": {
+    "mode": "profile",
+    "profile": [
+     [
+      0.06,
+      3.095
+     ],
+     [
+      2.2,
+      3.095
+     ]
+    ],
+    "roofs": [
+     "RW"
+    ]
+   },
+   "extA": -0.06,
+   "extB": 0.0,
+   "rooms": [
+    "R-BSOC",
+    "R-CIRC"
+   ]
+  },
+  {
+   "id": "P-BSOC",
+   "a": [
+    0.125,
+    5.95
+   ],
+   "b": [
+    2.5,
+    5.95
+   ],
+   "t": 0.12,
+   "tClass": "int",
+   "kind": "int",
+   "name": "Parede banheiro social | Quarto 3",
+   "material": "reboco-int",
+   "openings": [],
+   "src": "confirmado",
+   "note": "",
+   "top": {
+    "mode": "profile",
+    "profile": [
+     [
+      0.125,
+      2.87
+     ],
+     [
+      2.435,
+      3.101
+     ]
+    ],
+    "roofs": [
+     "RW"
+    ]
+   },
+   "extA": -0.125,
+   "extB": 0.06,
+   "rooms": [
+    "R-Q3",
+    "R-BSOC"
+   ]
+  },
+  {
+   "id": "P-Q3E",
+   "a": [
+    2.5,
+    5.95
+   ],
+   "b": [
+    2.5,
+    7.9
+   ],
+   "t": 0.12,
+   "tClass": "int",
+   "kind": "int",
+   "name": "Parede Quarto 3 | circulação",
+   "material": "reboco-int",
+   "openings": [
+    {
+     "id": "P-Q3",
+     "type": "door",
+     "center": 0.65,
+     "w": 0.8,
+     "h": 2.1,
+     "sill": 0.0,
+     "material": "madeira-clara",
+     "src": "confirmado",
+     "name": "Porta do Quarto 3 / escritório",
+     "passable": true,
+     "swing": "in"
+    }
+   ],
+   "src": "confirmado",
+   "note": "",
+   "top": {
+    "mode": "profile",
+    "profile": [
+     [
+      -0.0,
+      3.095
+     ],
+     [
+      1.95,
+      3.095
+     ]
+    ],
+    "roofs": [
+     "RW"
+    ]
+   },
+   "extA": 0.0,
+   "extB": 0.0,
+   "rooms": [
+    "R-Q3",
+    "R-CIRC"
+   ]
+  },
+  {
+   "id": "P-CB",
+   "a": [
+    2.5,
+    7.9
+   ],
+   "b": [
+    3.61,
+    7.9
+   ],
+   "t": 0.12,
+   "tClass": "int",
+   "kind": "int",
+   "name": "Parede de fundo da circulação",
+   "material": "reboco-int",
+   "openings": [],
+   "src": "confirmado",
+   "note": "",
+   "top": {
+    "mode": "profile",
+    "profile": [
+     [
+      -0.06,
+      3.089
+     ],
+     [
+      1.185,
+      3.2135
+     ]
+    ],
+    "roofs": [
+     "RW"
+    ]
+   },
+   "extA": 0.06,
+   "extB": 0.075,
+   "rooms": [
+    "R-Q3",
+    "R-CIRC"
+   ]
+  },
+  {
+   "id": "P-MURO",
+   "a": [
+    4.58,
+    10.225
+   ],
+   "b": [
+    11.15,
+    10.225
+   ],
+   "t": 0.25,
+   "tClass": "ext",
+   "kind": "muro",
+   "name": "Muro baixo do pátio",
+   "material": "reboco",
+   "openings": [],
+   "src": "estimado",
+   "note": "Muro baixo off-white na frente do pátio (ficha e fachadas). Altura 1,10 m estimada.",
+   "height": 1.1,
+   "top": {
+    "mode": "flat",
+    "h": 1.1
+   },
+   "extA": -0.125,
+   "extB": -0.125,
+   "rooms": [
+    "R-PATIO"
+   ]
+  }
+ ],
+ "rooms": [
+  {
+   "id": "R-Q2",
+   "name": "Quarto 2",
+   "nominal": [
+    3.3,
+    3.2
+   ],
+   "floor": "madeira",
+   "polygon": [
+    [
+     0.25,
+     0.25
+    ],
+    [
+     3.325,
+     0.25
+    ],
+    [
+     3.325,
+     3.69
+    ],
+    [
+     0.25,
+     3.69
+    ]
+   ],
+   "spot": [
+    1.6,
+    1.9,
+    90
+   ],
+   "level": "terreo",
+   "src": "confirmado",
+   "areaSource": "polígono do modelo (faces internas das paredes)"
+  },
+  {
+   "id": "R-BSOC",
+   "name": "Banheiro social",
+   "nominal": [
+    2.4,
+    1.7
+   ],
+   "floor": "porcelanato",
+   "polygon": [
+    [
+     0.25,
+     3.81
+    ],
+    [
+     2.44,
+     3.81
+    ],
+    [
+     2.44,
+     5.89
+    ],
+    [
+     0.25,
+     5.89
+    ]
+   ],
+   "spot": [
+    1.5,
+    5.0,
+    0
+   ],
+   "level": "terreo",
+   "src": "confirmado",
+   "areaSource": "polígono do modelo (faces internas das paredes)"
+  },
+  {
+   "id": "R-Q3",
+   "name": "Quarto 3 / escritório",
+   "nominal": [
+    3.2,
+    3.1
+   ],
+   "floor": "madeira",
+   "polygon": [
+    [
+     0.25,
+     6.01
+    ],
+    [
+     2.44,
+     6.01
+    ],
+    [
+     2.44,
+     7.96
+    ],
+    [
+     3.535,
+     7.96
+    ],
+    [
+     3.535,
+     9.425
+    ],
+    [
+     0.25,
+     9.375
+    ]
+   ],
+   "spot": [
+    1.5,
+    8.3,
+    90
+   ],
+   "level": "terreo",
+   "src": "confirmado",
+   "areaSource": "polígono do modelo (faces internas das paredes)"
+  },
+  {
+   "id": "R-CIRC",
+   "name": "Circulação",
+   "nominal": [
+    1.2,
+    null
+   ],
+   "floor": "madeira",
+   "polygon": [
+    [
+     2.56,
+     3.81
+    ],
+    [
+     3.535,
+     3.81
+    ],
+    [
+     3.535,
+     5.93
+    ],
+    [
+     3.535,
+     7.84
+    ],
+    [
+     2.56,
+     7.84
+    ]
+   ],
+   "spot": [
+    3.05,
+    4.3,
+    180
+   ],
+   "level": "terreo",
+   "src": "confirmado",
+   "areaSource": "polígono do modelo (faces internas das paredes)"
+  },
+  {
+   "id": "R-SALA",
+   "name": "Sala de estar + jantar",
+   "nominal": [
+    6.0,
+    5.2
+   ],
+   "floor": "madeira",
+   "polygon": [
+    [
+     3.475,
+     0.25
+    ],
+    [
+     9.25,
+     0.25
+    ],
+    [
+     9.25,
+     5.44
+    ],
+    [
+     4.705,
+     5.44
+    ],
+    [
+     4.705,
+     9.425
+    ],
+    [
+     3.685,
+     9.425
+    ],
+    [
+     3.685,
+     5.93
+    ],
+    [
+     3.685,
+     3.81
+    ],
+    [
+     3.475,
+     3.81
+    ]
+   ],
+   "spot": [
+    6.2,
+    3.8,
+    0
+   ],
+   "note": "Inclui a faixa de ligação (~0,8 m) entre a circulação e o hall. O limite com a cozinha é aberto.",
+   "level": "terreo",
+   "src": "confirmado",
+   "areaSource": "polígono do modelo (faces internas das paredes)"
+  },
+  {
+   "id": "R-COZ",
+   "name": "Cozinha",
+   "nominal": [
+    4.0,
+    3.5
+   ],
+   "floor": "porcelanato",
+   "polygon": [
+    [
+     9.25,
+     0.25
+    ],
+    [
+     13.04,
+     0.25
+    ],
+    [
+     13.04,
+     4.32
+    ],
+    [
+     11.275,
+     4.32
+    ],
+    [
+     11.275,
+     5.44
+    ],
+    [
+     9.25,
+     5.44
+    ]
+   ],
+   "spot": [
+    11.2,
+    3.0,
+    0
+   ],
+   "note": "Aberta para a sala. Faixa sul voltada para o pátio.",
+   "level": "terreo",
+   "src": "confirmado",
+   "areaSource": "polígono do modelo (faces internas das paredes)"
+  },
+  {
+   "id": "R-LAV",
+   "name": "Lavanderia / área técnica",
+   "nominal": [
+    2.6,
+    2.1
+   ],
+   "floor": "porcelanato",
+   "polygon": [
+    [
+     13.16,
+     0.25
+    ],
+    [
+     15.55,
+     0.25
+    ],
+    [
+     15.55,
+     3.09
+    ],
+    [
+     13.16,
+     3.09
+    ]
+   ],
+   "spot": [
+    14.4,
+    1.6,
+    270
+   ],
+   "level": "terreo",
+   "src": "confirmado",
+   "areaSource": "polígono do modelo (faces internas das paredes)"
+  },
+  {
+   "id": "R-BSU",
+   "name": "Banheiro da suíte",
+   "nominal": [
+    2.4,
+    2.2
+   ],
+   "floor": "porcelanato",
+   "polygon": [
+    [
+     13.16,
+     3.21
+    ],
+    [
+     15.55,
+     3.21
+    ],
+    [
+     15.55,
+     6.06
+    ],
+    [
+     13.16,
+     6.06
+    ]
+   ],
+   "spot": [
+    14.4,
+    4.8,
+    270
+   ],
+   "level": "terreo",
+   "src": "confirmado",
+   "areaSource": "polígono do modelo (faces internas das paredes)"
+  },
+  {
+   "id": "R-SUI",
+   "name": "Suíte principal",
+   "nominal": [
+    4.0,
+    3.6
+   ],
+   "floor": "madeira",
+   "polygon": [
+    [
+     11.275,
+     4.44
+    ],
+    [
+     13.04,
+     4.44
+    ],
+    [
+     13.04,
+     6.18
+    ],
+    [
+     15.55,
+     6.18
+    ],
+    [
+     15.55,
+     10.1
+    ],
+    [
+     11.275,
+     10.1
+    ]
+   ],
+   "spot": [
+    13.3,
+    7.0,
+    90
+   ],
+   "level": "terreo",
+   "src": "confirmado",
+   "areaSource": "polígono do modelo (faces internas das paredes)"
+  },
+  {
+   "id": "R-HALL",
+   "name": "Hall de entrada",
+   "nominal": [
+    2.2,
+    2.0
+   ],
+   "floor": "madeira",
+   "polygon": [
+    [
+     2.29,
+     9.575
+    ],
+    [
+     4.455,
+     9.575
+    ],
+    [
+     4.455,
+     11.95
+    ],
+    [
+     2.29,
+     11.95
+    ]
+   ],
+   "spot": [
+    3.3,
+    11.4,
+    180
+   ],
+   "level": "terreo",
+   "src": "confirmado",
+   "areaSource": "polígono do modelo (faces internas das paredes)"
+  },
+  {
+   "id": "R-PATIO",
+   "name": "Pátio / varanda central",
+   "nominal": [
+    6.2,
+    4.8
+   ],
+   "floor": "cimenticio",
+   "open": true,
+   "polygon": [
+    [
+     4.705,
+     5.56
+    ],
+    [
+     11.025,
+     5.56
+    ],
+    [
+     11.025,
+     10.1
+    ],
+    [
+     4.705,
+     10.1
+    ]
+   ],
+   "spot": [
+    7.9,
+    8.4,
+    0
+   ],
+   "note": "Área descoberta (vazio na planta de cobertura). Piso cimentício.",
+   "level": "terreo",
+   "src": "confirmado",
+   "areaSource": "polígono do modelo (faces internas das paredes)"
+  }
+ ],
+ "roofs": [
+  {
+   "id": "RW",
+   "name": "Telhado ala oeste (uma água)",
+   "src": "estimado",
+   "polygon": [
+    [
+     -0.45,
+     -0.45
+    ],
+    [
+     3.4,
+     -0.45
+    ],
+    [
+     3.4,
+     3.75
+    ],
+    [
+     3.61,
+     3.75
+    ],
+    [
+     3.61,
+     10.075
+    ],
+    [
+     -0.45,
+     10.075
+    ]
+   ],
+   "holes": [],
+   "plane": {
+    "x0": -0.45,
+    "z0": 0,
+    "h0": 2.8,
+    "gx": 0.1,
+    "gz": 0.0
+   },
+   "note": "Cai para oeste, inclinação 10% (planta de cobertura). Alturas estimadas."
+  },
+  {
+   "id": "RC",
+   "name": "Telhado volume social central (uma água)",
+   "src": "estimado",
+   "polygon": [
+    [
+     3.4,
+     -0.45
+    ],
+    [
+     13.1,
+     -0.45
+    ],
+    [
+     13.1,
+     7.65
+    ],
+    [
+     10.95,
+     7.65
+    ],
+    [
+     10.95,
+     5.8
+    ],
+    [
+     4.8,
+     5.8
+    ],
+    [
+     4.8,
+     9.65
+    ],
+    [
+     3.61,
+     9.65
+    ],
+    [
+     3.61,
+     3.75
+    ],
+    [
+     3.4,
+     3.75
+    ]
+   ],
+   "holes": [
+    [
+     [
+      3.8,
+      8.55
+     ],
+     [
+      4.42,
+      8.55
+     ],
+     [
+      4.42,
+      9.45
+     ],
+     [
+      3.8,
+      9.45
+     ]
+    ]
+   ],
+   "plane": {
+    "x0": 0,
+    "z0": 0,
+    "h0": 4.74,
+    "gx": 0.0,
+    "gz": -0.17
+   },
+   "note": "Cai para o sul (frente). Cumeeira mais alta ao norte: 4,90 m (cota das fachadas). Inclinação ≈17% adotada pela ficha (8–10°)."
+  },
+  {
+   "id": "RH",
+   "name": "Telhado do hall de entrada (uma água)",
+   "src": "estimado",
+   "polygon": [
+    [
+     2.0,
+     9.65
+    ],
+    [
+     4.95,
+     9.65
+    ],
+    [
+     4.95,
+     12.649999999999999
+    ],
+    [
+     2.0,
+     12.649999999999999
+    ]
+   ],
+   "holes": [],
+   "plane": {
+    "x0": 0,
+    "z0": 9.65,
+    "h0": 3.85,
+    "gx": 0.0,
+    "gz": -0.1
+   },
+   "note": "Volume do hall mais alto que as alas (caixa em madeira das fachadas)."
+  },
+  {
+   "id": "RN",
+   "name": "Telhado ala leste norte (lavanderia/banho)",
+   "src": "estimado",
+   "polygon": [
+    [
+     13.1,
+     -0.45
+    ],
+    [
+     16.25,
+     -0.45
+    ],
+    [
+     16.25,
+     7.1
+    ],
+    [
+     13.1,
+     7.1
+    ]
+   ],
+   "holes": [],
+   "plane": {
+    "x0": 13.1,
+    "z0": 0,
+    "h0": 3.4,
+    "gx": -0.1,
+    "gz": 0.0
+   },
+   "note": "Cai para leste, inclinação 10%."
+  },
+  {
+   "id": "RS",
+   "name": "Telhado da suíte (uma água)",
+   "src": "estimado",
+   "polygon": [
+    [
+     10.95,
+     7.65
+    ],
+    [
+     13.1,
+     7.65
+    ],
+    [
+     13.1,
+     7.1
+    ],
+    [
+     16.25,
+     7.1
+    ],
+    [
+     16.25,
+     10.799999999999999
+    ],
+    [
+     10.95,
+     10.799999999999999
+    ]
+   ],
+   "holes": [],
+   "plane": {
+    "x0": 10.95,
+    "z0": 0,
+    "h0": 3.3,
+    "gx": -0.1,
+    "gz": 0.0
+   },
+   "note": "Cai para leste, inclinação 10%."
+  }
+ ],
+ "roofExtras": {
+  "skylight": {
+   "id": "CL-1",
+   "name": "Claraboia (planta de cobertura)",
+   "center": [
+    4.11,
+    9.0
+   ],
+   "size": [
+    0.62,
+    0.9
+   ],
+   "src": "confirmado",
+   "note": "Posição lida da planta de cobertura; ajustada para a faixa de ligação entre a circulação e o hall."
+  },
+  "chimney": {
+   "id": "CH-1",
+   "name": "Chaminé / duto (planta de cobertura)",
+   "pos": [
+    4.43,
+    2.28
+   ],
+   "radius": 0.1,
+   "height": 0.9,
+   "src": "estimado",
+   "note": "Círculo escuro na planta de cobertura; função não documentada (provável chaminé/exaustão)."
+  }
+ },
+ "structure": {
+  "system": "Concreto armado ilustrativo: pilares + cinta superior + baldrame; cobertura em madeira/metal.",
+  "note": "ESQUEMÁTICO. A planta arquitetônica não traz projeto estrutural; dimensões e posições são ilustrativas.",
+  "pillars": [
+   {
+    "id": "PL-01",
+    "x": 0.12,
+    "z": 0.12,
+    "size": 0.25,
+    "top": 2.857,
+    "ext": true
+   },
+   {
+    "id": "PL-02",
+    "x": 15.68,
+    "z": 0.12,
+    "size": 0.25,
+    "top": 3.142,
+    "ext": true
+   },
+   {
+    "id": "PL-03",
+    "x": 15.68,
+    "z": 10.22,
+    "size": 0.25,
+    "top": 2.827,
+    "ext": true
+   },
+   {
+    "id": "PL-04",
+    "x": 11.15,
+    "z": 10.22,
+    "size": 0.25,
+    "top": 3.28,
+    "ext": true
+   },
+   {
+    "id": "PL-05",
+    "x": 11.15,
+    "z": 4.38,
+    "size": 0.25,
+    "top": 3.995,
+    "ext": true
+   },
+   {
+    "id": "PL-06",
+    "x": 13.1,
+    "z": 4.38,
+    "size": 0.15,
+    "top": 3.995,
+    "ext": false
+   },
+   {
+    "id": "PL-07",
+    "x": 13.1,
+    "z": 0.12,
+    "size": 0.15,
+    "top": 4.72,
+    "ext": false
+   },
+   {
+    "id": "PL-08",
+    "x": 13.1,
+    "z": 6.12,
+    "size": 0.15,
+    "top": 3.7,
+    "ext": false
+   },
+   {
+    "id": "PL-09",
+    "x": 13.1,
+    "z": 3.15,
+    "size": 0.15,
+    "top": 4.205,
+    "ext": false
+   },
+   {
+    "id": "PL-10",
+    "x": 15.68,
+    "z": 3.15,
+    "size": 0.15,
+    "top": 3.142,
+    "ext": false
+   },
+   {
+    "id": "PL-11",
+    "x": 15.68,
+    "z": 6.12,
+    "size": 0.15,
+    "top": 3.142,
+    "ext": false
+   },
+   {
+    "id": "PL-12",
+    "x": 4.58,
+    "z": 5.5,
+    "size": 0.25,
+    "top": 3.805,
+    "ext": true
+   },
+   {
+    "id": "PL-13",
+    "x": 11.15,
+    "z": 5.5,
+    "size": 0.15,
+    "top": 3.805,
+    "ext": false
+   },
+   {
+    "id": "PL-14",
+    "x": 4.58,
+    "z": 12.07,
+    "size": 0.25,
+    "top": 3.608,
+    "ext": true
+   },
+   {
+    "id": "PL-15",
+    "x": 2.17,
+    "z": 12.07,
+    "size": 0.25,
+    "top": 3.608,
+    "ext": true
+   },
+   {
+    "id": "PL-16",
+    "x": 2.17,
+    "z": 9.5,
+    "size": 0.25,
+    "top": 3.865,
+    "ext": true
+   },
+   {
+    "id": "PL-17",
+    "x": 0.12,
+    "z": 9.5,
+    "size": 0.25,
+    "top": 2.857,
+    "ext": true
+   },
+   {
+    "id": "PL-18",
+    "x": 4.58,
+    "z": 9.5,
+    "size": 0.15,
+    "top": 3.865,
+    "ext": false
+   },
+   {
+    "id": "PL-19",
+    "x": 3.4,
+    "z": 0.12,
+    "size": 0.15,
+    "top": 4.72,
+    "ext": false
+   },
+   {
+    "id": "PL-20",
+    "x": 3.4,
+    "z": 3.75,
+    "size": 0.15,
+    "top": 4.103,
+    "ext": false
+   },
+   {
+    "id": "PL-21",
+    "x": 0.12,
+    "z": 3.75,
+    "size": 0.15,
+    "top": 2.857,
+    "ext": false
+   },
+   {
+    "id": "PL-22",
+    "x": 3.61,
+    "z": 3.75,
+    "size": 0.15,
+    "top": 4.103,
+    "ext": false
+   },
+   {
+    "id": "PL-23",
+    "x": 3.61,
+    "z": 7.9,
+    "size": 0.15,
+    "top": 3.397,
+    "ext": false
+   },
+   {
+    "id": "PL-24",
+    "x": 3.61,
+    "z": 9.5,
+    "size": 0.15,
+    "top": 3.865,
+    "ext": false
+   },
+   {
+    "id": "PL-25",
+    "x": 2.5,
+    "z": 3.75,
+    "size": 0.15,
+    "top": 3.095,
+    "ext": false
+   },
+   {
+    "id": "PL-26",
+    "x": 2.5,
+    "z": 5.95,
+    "size": 0.15,
+    "top": 3.095,
+    "ext": false
+   },
+   {
+    "id": "PL-27",
+    "x": 0.12,
+    "z": 5.95,
+    "size": 0.15,
+    "top": 2.857,
+    "ext": false
+   },
+   {
+    "id": "PL-28",
+    "x": 2.5,
+    "z": 7.9,
+    "size": 0.15,
+    "top": 3.095,
+    "ext": false
+   },
+   {
+    "id": "PL-29",
+    "x": 4.013,
+    "z": 0.125,
+    "size": 0.25,
+    "top": 4.719,
+    "ext": true
+   },
+   {
+    "id": "PL-30",
+    "x": 7.9,
+    "z": 0.125,
+    "size": 0.25,
+    "top": 4.719,
+    "ext": true
+   },
+   {
+    "id": "PL-31",
+    "x": 11.788,
+    "z": 0.125,
+    "size": 0.25,
+    "top": 4.719,
+    "ext": true
+   },
+   {
+    "id": "PL-32",
+    "x": 15.675,
+    "z": 3.492,
+    "size": 0.25,
+    "top": 3.142,
+    "ext": true
+   },
+   {
+    "id": "PL-33",
+    "x": 11.15,
+    "z": 7.303,
+    "size": 0.25,
+    "top": 3.499,
+    "ext": true
+   },
+   {
+    "id": "PL-34",
+    "x": 4.58,
+    "z": 8.787,
+    "size": 0.25,
+    "top": 3.246,
+    "ext": true
+   },
+   {
+    "id": "PL-35",
+    "x": 0.125,
+    "z": 6.375,
+    "size": 0.25,
+    "top": 2.857,
+    "ext": true
+   },
+   {
+    "id": "PL-36",
+    "x": 0.125,
+    "z": 3.25,
+    "size": 0.25,
+    "top": 2.857,
+    "ext": true
+   }
+  ],
+  "rafters": [
+   {
+    "roof": "RW",
+    "a": [
+     -0.4,
+     0.0
+    ],
+    "b": [
+     3.35,
+     0.0
+    ]
+   },
+   {
+    "roof": "RW",
+    "a": [
+     -0.4,
+     0.9
+    ],
+    "b": [
+     3.35,
+     0.9
+    ]
+   },
+   {
+    "roof": "RW",
+    "a": [
+     -0.4,
+     1.8
+    ],
+    "b": [
+     3.35,
+     1.8
+    ]
+   },
+   {
+    "roof": "RW",
+    "a": [
+     -0.4,
+     2.7
+    ],
+    "b": [
+     3.35,
+     2.7
+    ]
+   },
+   {
+    "roof": "RW",
+    "a": [
+     -0.4,
+     3.6
+    ],
+    "b": [
+     3.35,
+     3.6
+    ]
+   },
+   {
+    "roof": "RW",
+    "a": [
+     -0.4,
+     4.5
+    ],
+    "b": [
+     3.56,
+     4.5
+    ]
+   },
+   {
+    "roof": "RW",
+    "a": [
+     -0.4,
+     5.4
+    ],
+    "b": [
+     3.56,
+     5.4
+    ]
+   },
+   {
+    "roof": "RW",
+    "a": [
+     -0.4,
+     6.3
+    ],
+    "b": [
+     3.56,
+     6.3
+    ]
+   },
+   {
+    "roof": "RW",
+    "a": [
+     -0.4,
+     7.2
+    ],
+    "b": [
+     3.56,
+     7.2
+    ]
+   },
+   {
+    "roof": "RW",
+    "a": [
+     -0.4,
+     8.1
+    ],
+    "b": [
+     3.56,
+     8.1
+    ]
+   },
+   {
+    "roof": "RW",
+    "a": [
+     -0.4,
+     9.0
+    ],
+    "b": [
+     3.56,
+     9.0
+    ]
+   },
+   {
+    "roof": "RW",
+    "a": [
+     -0.4,
+     9.9
+    ],
+    "b": [
+     3.56,
+     9.9
+    ]
+   },
+   {
+    "roof": "RC",
+    "a": [
+     3.85,
+     -0.4
+    ],
+    "b": [
+     3.85,
+     8.5
+    ]
+   },
+   {
+    "roof": "RC",
+    "a": [
+     4.75,
+     -0.4
+    ],
+    "b": [
+     4.75,
+     9.6
+    ]
+   },
+   {
+    "roof": "RC",
+    "a": [
+     5.65,
+     -0.4
+    ],
+    "b": [
+     5.65,
+     5.75
+    ]
+   },
+   {
+    "roof": "RC",
+    "a": [
+     6.55,
+     -0.4
+    ],
+    "b": [
+     6.55,
+     5.75
+    ]
+   },
+   {
+    "roof": "RC",
+    "a": [
+     7.45,
+     -0.4
+    ],
+    "b": [
+     7.45,
+     5.75
+    ]
+   },
+   {
+    "roof": "RC",
+    "a": [
+     8.35,
+     -0.4
+    ],
+    "b": [
+     8.35,
+     5.75
+    ]
+   },
+   {
+    "roof": "RC",
+    "a": [
+     9.25,
+     -0.4
+    ],
+    "b": [
+     9.25,
+     5.75
+    ]
+   },
+   {
+    "roof": "RC",
+    "a": [
+     10.15,
+     -0.4
+    ],
+    "b": [
+     10.15,
+     5.75
+    ]
+   },
+   {
+    "roof": "RC",
+    "a": [
+     11.05,
+     -0.4
+    ],
+    "b": [
+     11.05,
+     7.6
+    ]
+   },
+   {
+    "roof": "RC",
+    "a": [
+     11.95,
+     -0.4
+    ],
+    "b": [
+     11.95,
+     7.6
+    ]
+   },
+   {
+    "roof": "RC",
+    "a": [
+     12.85,
+     -0.4
+    ],
+    "b": [
+     12.85,
+     7.6
+    ]
+   },
+   {
+    "roof": "RH",
+    "a": [
+     2.45,
+     9.7
+    ],
+    "b": [
+     2.45,
+     12.6
+    ]
+   },
+   {
+    "roof": "RH",
+    "a": [
+     3.35,
+     9.7
+    ],
+    "b": [
+     3.35,
+     12.6
+    ]
+   },
+   {
+    "roof": "RH",
+    "a": [
+     4.25,
+     9.7
+    ],
+    "b": [
+     4.25,
+     12.6
+    ]
+   },
+   {
+    "roof": "RN",
+    "a": [
+     13.15,
+     0.0
+    ],
+    "b": [
+     16.2,
+     0.0
+    ]
+   },
+   {
+    "roof": "RN",
+    "a": [
+     13.15,
+     0.9
+    ],
+    "b": [
+     16.2,
+     0.9
+    ]
+   },
+   {
+    "roof": "RN",
+    "a": [
+     13.15,
+     1.8
+    ],
+    "b": [
+     16.2,
+     1.8
+    ]
+   },
+   {
+    "roof": "RN",
+    "a": [
+     13.15,
+     2.7
+    ],
+    "b": [
+     16.2,
+     2.7
+    ]
+   },
+   {
+    "roof": "RN",
+    "a": [
+     13.15,
+     3.6
+    ],
+    "b": [
+     16.2,
+     3.6
+    ]
+   },
+   {
+    "roof": "RN",
+    "a": [
+     13.15,
+     4.5
+    ],
+    "b": [
+     16.2,
+     4.5
+    ]
+   },
+   {
+    "roof": "RN",
+    "a": [
+     13.15,
+     5.4
+    ],
+    "b": [
+     16.2,
+     5.4
+    ]
+   },
+   {
+    "roof": "RN",
+    "a": [
+     13.15,
+     6.3
+    ],
+    "b": [
+     16.2,
+     6.3
+    ]
+   },
+   {
+    "roof": "RS",
+    "a": [
+     13.15,
+     7.55
+    ],
+    "b": [
+     16.2,
+     7.55
+    ]
+   },
+   {
+    "roof": "RS",
+    "a": [
+     11.0,
+     8.45
+    ],
+    "b": [
+     16.2,
+     8.45
+    ]
+   },
+   {
+    "roof": "RS",
+    "a": [
+     11.0,
+     9.35
+    ],
+    "b": [
+     16.2,
+     9.35
+    ]
+   },
+   {
+    "roof": "RS",
+    "a": [
+     11.0,
+     10.25
+    ],
+    "b": [
+     16.2,
+     10.25
+    ]
+   }
+  ]
+ },
+ "slab": {
+  "name": "Radier (laje de piso)",
+  "polygon": [
+   [
+    0,
+    0
+   ],
+   [
+    15.8,
+    0
+   ],
+   [
+    15.8,
+    10.35
+   ],
+   [
+    4.705,
+    10.35
+   ],
+   [
+    4.705,
+    12.2
+   ],
+   [
+    2.04,
+    12.2
+   ],
+   [
+    2.04,
+    9.625
+   ],
+   [
+    0,
+    9.625
+   ]
+  ],
+  "src": "esquematico",
+  "note": "ESQUEMÁTICO: laje de piso (radier) sobre toda a pegada da casa e do pátio."
+ },
+ "furniture": [
+  {
+   "id": "M-Q2-CAMA",
+   "kind": "bed",
+   "room": "R-Q2",
+   "x": 1.2,
+   "z": 1.28,
+   "w": 1.0,
+   "d": 1.95,
+   "h": 0.55,
+   "rot": 0,
+   "material": "madeira-clara",
+   "name": "Cama (Quarto 2)",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-Q2-CRIADO",
+   "kind": "nightstand",
+   "room": "R-Q2",
+   "x": 0.62,
+   "z": 1.88,
+   "w": 0.4,
+   "d": 0.4,
+   "h": 0.45,
+   "rot": 0,
+   "material": "madeira-clara",
+   "name": "Criado-mudo (Quarto 2)",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-Q2-ARM",
+   "kind": "wardrobe",
+   "room": "R-Q2",
+   "x": 3.01,
+   "z": 1.35,
+   "w": 0.5,
+   "d": 1.9,
+   "h": 2.1,
+   "rot": 270,
+   "material": "madeira-clara",
+   "name": "Armário (Quarto 2)",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-Q2-COM",
+   "kind": "cabinet",
+   "room": "R-Q2",
+   "x": 0.6,
+   "z": 3.3,
+   "w": 0.6,
+   "d": 0.45,
+   "h": 0.8,
+   "rot": 180,
+   "material": "madeira-clara",
+   "name": "Cômoda (Quarto 2)",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-BS-VASO",
+   "kind": "toilet",
+   "room": "R-BSOC",
+   "x": 1.4,
+   "z": 4.05,
+   "w": 0.38,
+   "d": 0.65,
+   "h": 0.4,
+   "rot": 0,
+   "material": "louca",
+   "name": "Vaso sanitário (social)",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-BS-LAV",
+   "kind": "basin",
+   "room": "R-BSOC",
+   "x": 1.95,
+   "z": 3.95,
+   "w": 0.5,
+   "d": 0.4,
+   "h": 0.85,
+   "rot": 0,
+   "material": "louca",
+   "name": "Lavatório (social)",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-BS-BOX",
+   "kind": "shower",
+   "room": "R-BSOC",
+   "x": 0.7,
+   "z": 4.45,
+   "w": 0.9,
+   "d": 0.9,
+   "h": 2.0,
+   "rot": 0,
+   "material": "vidro",
+   "name": "Box com chuveiro (social)",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-Q3-CAMA",
+   "kind": "bed",
+   "room": "R-Q3",
+   "x": 0.78,
+   "z": 7.2,
+   "w": 0.9,
+   "d": 1.95,
+   "h": 0.5,
+   "rot": 0,
+   "material": "madeira-clara",
+   "name": "Cama de solteiro (Quarto 3)",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-Q3-MESA",
+   "kind": "desk",
+   "room": "R-Q3",
+   "x": 2.1,
+   "z": 7.8,
+   "w": 1.1,
+   "d": 0.6,
+   "h": 0.75,
+   "rot": 0,
+   "material": "madeira-clara",
+   "name": "Escrivaninha (escritório)",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-Q3-CAD",
+   "kind": "chair",
+   "room": "R-Q3",
+   "x": 1.95,
+   "z": 7.25,
+   "w": 0.45,
+   "d": 0.45,
+   "h": 0.9,
+   "rot": 0,
+   "material": "madeira-clara",
+   "name": "Cadeira (escritório)",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-Q3-EST",
+   "kind": "shelf",
+   "room": "R-Q3",
+   "x": 3.3,
+   "z": 8.85,
+   "w": 0.4,
+   "d": 1.2,
+   "h": 1.9,
+   "rot": 270,
+   "material": "madeira-clara",
+   "name": "Estante (escritório)",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-HALL-BANCO",
+   "kind": "bench",
+   "room": "R-HALL",
+   "x": 3.35,
+   "z": 11.6,
+   "w": 0.9,
+   "d": 0.38,
+   "h": 0.45,
+   "rot": 0,
+   "material": "madeira-clara",
+   "name": "Banco do hall",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-HALL-JARD",
+   "kind": "planter",
+   "room": "R-HALL",
+   "x": 2.5,
+   "z": 10.55,
+   "w": 0.3,
+   "d": 1.0,
+   "h": 0.45,
+   "rot": 0,
+   "material": "madeira-escura",
+   "name": "Jardineira (hall)",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-SALA-SOFA",
+   "kind": "sofaL",
+   "room": "R-SALA",
+   "x": 5.5,
+   "z": 2.2,
+   "w": 2.2,
+   "d": 3.0,
+   "h": 0.85,
+   "rot": 0,
+   "material": "tecido-claro",
+   "name": "Sofá em L",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-SALA-TAPETE",
+   "kind": "rug",
+   "room": "R-SALA",
+   "x": 5.55,
+   "z": 2.35,
+   "w": 2.9,
+   "d": 3.6,
+   "h": 0.015,
+   "rot": 0,
+   "material": "tecido-claro",
+   "name": "Tapete",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-SALA-CENTRO",
+   "kind": "roundtable",
+   "room": "R-SALA",
+   "x": 4.65,
+   "z": 2.6,
+   "w": 0.8,
+   "d": 0.8,
+   "h": 0.4,
+   "rot": 0,
+   "material": "madeira-clara",
+   "name": "Mesa de centro",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-SALA-TV",
+   "kind": "tvunit",
+   "room": "R-SALA",
+   "x": 3.72,
+   "z": 2.6,
+   "w": 0.4,
+   "d": 2.6,
+   "h": 0.55,
+   "rot": 0,
+   "material": "madeira-escura",
+   "name": "Painel de TV",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-SALA-MESA",
+   "kind": "table",
+   "room": "R-SALA",
+   "x": 8.0,
+   "z": 2.6,
+   "w": 1.0,
+   "d": 1.9,
+   "h": 0.76,
+   "rot": 0,
+   "material": "madeira-clara",
+   "name": "Mesa de jantar",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-SALA-PEND1",
+   "kind": "pendant",
+   "room": "R-SALA",
+   "x": 8.0,
+   "z": 2.05,
+   "w": 0.36,
+   "d": 0.36,
+   "h": 1.62,
+   "rot": 0,
+   "material": "preto",
+   "name": "Pendente sobre a mesa (1)",
+   "src": "estimado",
+   "note": "Inspirado nas imagens de referência (pendentes pretos sobre a mesa)."
+  },
+  {
+   "id": "M-SALA-PEND2",
+   "kind": "pendant",
+   "room": "R-SALA",
+   "x": 8.0,
+   "z": 3.15,
+   "w": 0.36,
+   "d": 0.36,
+   "h": 1.62,
+   "rot": 0,
+   "material": "preto",
+   "name": "Pendente sobre a mesa (2)",
+   "src": "estimado",
+   "note": "Inspirado nas imagens de referência (pendentes pretos sobre a mesa)."
+  },
+  {
+   "id": "M-SALA-C1",
+   "kind": "chair",
+   "room": "R-SALA",
+   "x": 7.35,
+   "z": 2.0,
+   "w": 0.42,
+   "d": 0.42,
+   "h": 0.9,
+   "rot": 90,
+   "material": "madeira-clara",
+   "name": "Cadeira de jantar 1",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-SALA-C2",
+   "kind": "chair",
+   "room": "R-SALA",
+   "x": 7.35,
+   "z": 2.6,
+   "w": 0.42,
+   "d": 0.42,
+   "h": 0.9,
+   "rot": 90,
+   "material": "madeira-clara",
+   "name": "Cadeira de jantar 2",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-SALA-C3",
+   "kind": "chair",
+   "room": "R-SALA",
+   "x": 7.35,
+   "z": 3.2,
+   "w": 0.42,
+   "d": 0.42,
+   "h": 0.9,
+   "rot": 90,
+   "material": "madeira-clara",
+   "name": "Cadeira de jantar 3",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-SALA-C4",
+   "kind": "chair",
+   "room": "R-SALA",
+   "x": 8.65,
+   "z": 2.0,
+   "w": 0.42,
+   "d": 0.42,
+   "h": 0.9,
+   "rot": 270,
+   "material": "madeira-clara",
+   "name": "Cadeira de jantar 4",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-SALA-C5",
+   "kind": "chair",
+   "room": "R-SALA",
+   "x": 8.65,
+   "z": 2.6,
+   "w": 0.42,
+   "d": 0.42,
+   "h": 0.9,
+   "rot": 270,
+   "material": "madeira-clara",
+   "name": "Cadeira de jantar 5",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-SALA-C6",
+   "kind": "chair",
+   "room": "R-SALA",
+   "x": 8.65,
+   "z": 3.2,
+   "w": 0.42,
+   "d": 0.42,
+   "h": 0.9,
+   "rot": 270,
+   "material": "madeira-clara",
+   "name": "Cadeira de jantar 6",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-SALA-VASO",
+   "kind": "plant",
+   "room": "R-SALA",
+   "x": 4.05,
+   "z": 0.7,
+   "w": 0.5,
+   "d": 0.5,
+   "h": 0.9,
+   "rot": 0,
+   "material": "madeira-clara",
+   "name": "Vaso de planta (sala)",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-COZ-BANC",
+   "kind": "counter",
+   "room": "R-COZ",
+   "x": 11.3,
+   "z": 0.6,
+   "w": 3.4,
+   "d": 0.62,
+   "h": 0.9,
+   "rot": 0,
+   "material": "bancada",
+   "name": "Bancada com pia e cooktop",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-COZ-GEL",
+   "kind": "fridge",
+   "room": "R-COZ",
+   "x": 9.7,
+   "z": 1.35,
+   "w": 0.75,
+   "d": 0.75,
+   "h": 1.8,
+   "rot": 0,
+   "material": "inox",
+   "name": "Geladeira",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-COZ-ILHA",
+   "kind": "counter",
+   "room": "R-COZ",
+   "x": 12.36,
+   "z": 2.85,
+   "w": 0.62,
+   "d": 1.5,
+   "h": 0.92,
+   "rot": 0,
+   "material": "bancada",
+   "name": "Ilha da cozinha",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-COZ-BQ1",
+   "kind": "stool",
+   "room": "R-COZ",
+   "x": 11.55,
+   "z": 3.9,
+   "w": 0.36,
+   "d": 0.36,
+   "h": 0.65,
+   "rot": 0,
+   "material": "madeira-clara",
+   "name": "Banqueta 1",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-COZ-BQ2",
+   "kind": "stool",
+   "room": "R-COZ",
+   "x": 12.15,
+   "z": 3.9,
+   "w": 0.36,
+   "d": 0.36,
+   "h": 0.65,
+   "rot": 0,
+   "material": "madeira-clara",
+   "name": "Banqueta 2",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-COZ-BQ3",
+   "kind": "stool",
+   "room": "R-COZ",
+   "x": 12.75,
+   "z": 3.9,
+   "w": 0.36,
+   "d": 0.36,
+   "h": 0.65,
+   "rot": 0,
+   "material": "madeira-clara",
+   "name": "Banqueta 3",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-LAV-TANQ",
+   "kind": "tank",
+   "room": "R-LAV",
+   "x": 13.72,
+   "z": 0.58,
+   "w": 0.6,
+   "d": 0.55,
+   "h": 0.9,
+   "rot": 0,
+   "material": "inox",
+   "name": "Tanque",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-LAV-MAQ",
+   "kind": "washer",
+   "room": "R-LAV",
+   "x": 15.0,
+   "z": 0.62,
+   "w": 0.6,
+   "d": 0.6,
+   "h": 0.85,
+   "rot": 0,
+   "material": "branco",
+   "name": "Máquina de lavar",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-LAV-ARM",
+   "kind": "cabinet",
+   "room": "R-LAV",
+   "x": 15.05,
+   "z": 2.85,
+   "w": 0.8,
+   "d": 0.45,
+   "h": 0.9,
+   "rot": 180,
+   "material": "madeira-clara",
+   "name": "Armário baixo (lavanderia)",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-BSU-BOX",
+   "kind": "shower",
+   "room": "R-BSU",
+   "x": 13.78,
+   "z": 3.75,
+   "w": 0.9,
+   "d": 0.9,
+   "h": 2.0,
+   "rot": 0,
+   "material": "vidro",
+   "name": "Box com chuveiro (suíte)",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-BSU-VASO",
+   "kind": "toilet",
+   "room": "R-BSU",
+   "x": 14.6,
+   "z": 3.55,
+   "w": 0.38,
+   "d": 0.65,
+   "h": 0.4,
+   "rot": 0,
+   "material": "louca",
+   "name": "Vaso sanitário (suíte)",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-BSU-LAV",
+   "kind": "basin",
+   "room": "R-BSU",
+   "x": 15.2,
+   "z": 3.5,
+   "w": 0.55,
+   "d": 0.42,
+   "h": 0.85,
+   "rot": 0,
+   "material": "louca",
+   "name": "Lavatório (suíte)",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-SUI-CAMA",
+   "kind": "bed",
+   "room": "R-SUI",
+   "x": 13.45,
+   "z": 8.7,
+   "w": 1.8,
+   "d": 2.1,
+   "h": 0.6,
+   "rot": 180,
+   "material": "madeira-clara",
+   "name": "Cama de casal (suíte)",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-SUI-C1",
+   "kind": "nightstand",
+   "room": "R-SUI",
+   "x": 12.2,
+   "z": 9.65,
+   "w": 0.45,
+   "d": 0.42,
+   "h": 0.5,
+   "rot": 0,
+   "material": "madeira-clara",
+   "name": "Criado-mudo esquerdo (suíte)",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-SUI-C2",
+   "kind": "nightstand",
+   "room": "R-SUI",
+   "x": 14.7,
+   "z": 9.65,
+   "w": 0.45,
+   "d": 0.42,
+   "h": 0.5,
+   "rot": 0,
+   "material": "madeira-clara",
+   "name": "Criado-mudo direito (suíte)",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-SUI-ARM",
+   "kind": "wardrobe",
+   "room": "R-SUI",
+   "x": 12.55,
+   "z": 4.78,
+   "w": 0.9,
+   "d": 0.55,
+   "h": 2.1,
+   "rot": 0,
+   "material": "madeira-clara",
+   "name": "Armário (suíte)",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-SUI-TAPETE",
+   "kind": "rug",
+   "room": "R-SUI",
+   "x": 13.45,
+   "z": 8.35,
+   "w": 2.6,
+   "d": 2.6,
+   "h": 0.015,
+   "rot": 0,
+   "material": "tecido-claro",
+   "name": "Tapete (suíte)",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-PAT-MESA",
+   "kind": "roundtable",
+   "room": "R-PATIO",
+   "x": 7.47,
+   "z": 8.95,
+   "w": 1.1,
+   "d": 1.1,
+   "h": 0.7,
+   "rot": 0,
+   "material": "madeira-clara",
+   "name": "Mesa redonda (pátio)",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-PAT-POL1",
+   "kind": "armchair",
+   "room": "R-PATIO",
+   "x": 6.6,
+   "z": 9.15,
+   "w": 0.75,
+   "d": 0.8,
+   "h": 0.75,
+   "rot": 80,
+   "material": "tecido-claro",
+   "name": "Poltrona 1 (pátio)",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-PAT-POL2",
+   "kind": "armchair",
+   "room": "R-PATIO",
+   "x": 8.45,
+   "z": 9.15,
+   "w": 0.75,
+   "d": 0.8,
+   "h": 0.75,
+   "rot": 280,
+   "material": "tecido-claro",
+   "name": "Poltrona 2 (pátio)",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-PAT-V1",
+   "kind": "plant",
+   "room": "R-PATIO",
+   "x": 5.35,
+   "z": 9.65,
+   "w": 0.9,
+   "d": 0.9,
+   "h": 1.1,
+   "rot": 0,
+   "material": "madeira-clara",
+   "name": "Vaso de planta (pátio, oeste)",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  },
+  {
+   "id": "M-PAT-V2",
+   "kind": "plant",
+   "room": "R-PATIO",
+   "x": 10.3,
+   "z": 9.55,
+   "w": 1.0,
+   "d": 1.0,
+   "h": 1.3,
+   "rot": 0,
+   "material": "madeira-clara",
+   "name": "Vaso de planta (pátio, leste)",
+   "src": "estimado",
+   "note": "Sugestão visual (planta mobiliada)."
+  }
+ ],
+ "lights": [
+  {
+   "id": "LZ-Q2",
+   "room": "R-Q2",
+   "x": 1.788,
+   "z": 1.97,
+   "y": 2.984
+  },
+  {
+   "id": "LZ-BSOC",
+   "room": "R-BSOC",
+   "x": 1.345,
+   "z": 4.85,
+   "y": 2.939
+  },
+  {
+   "id": "LZ-Q3",
+   "room": "R-Q3",
+   "x": 1.893,
+   "z": 7.718,
+   "y": 2.994
+  },
+  {
+   "id": "LZ-CIRC",
+   "room": "R-CIRC",
+   "x": 3.048,
+   "z": 5.825,
+   "y": 3.11
+  },
+  {
+   "id": "LZ-SALA",
+   "room": "R-SALA",
+   "x": 6.362,
+   "z": 4.838,
+   "y": 3.878
+  },
+  {
+   "id": "LZ-COZ",
+   "room": "R-COZ",
+   "x": 11.145,
+   "z": 2.845,
+   "y": 4.216
+  },
+  {
+   "id": "LZ-LAV",
+   "room": "R-LAV",
+   "x": 14.355,
+   "z": 1.67,
+   "y": 3.234
+  },
+  {
+   "id": "LZ-BSU",
+   "room": "R-BSU",
+   "x": 14.355,
+   "z": 4.635,
+   "y": 3.234
+  },
+  {
+   "id": "LZ-SUI",
+   "room": "R-SUI",
+   "x": 13.413,
+   "z": 7.27,
+   "y": 3.014
+  },
+  {
+   "id": "LZ-HALL",
+   "room": "R-HALL",
+   "x": 3.373,
+   "z": 10.762,
+   "y": 3.699
+  }
+ ],
+ "systems": [
+  {
+   "id": "agua-fria",
+   "name": "Água fria",
+   "color": "#2f7fd6",
+   "icon": "droplet",
+   "stage": [
+    0.0,
+    0.4
+   ],
+   "routes": [
+    {
+     "id": "AF-ENT",
+     "label": "Alimentação (cavalete leste)",
+     "points": [
+      [
+       16.3,
+       0.3,
+       3.15
+      ],
+      [
+       15.675,
+       0.3,
+       3.15
+      ]
+     ],
+     "radius": 0.028
+    },
+    {
+     "id": "AF-BSU",
+     "label": "Ramal banheiro da suíte",
+     "points": [
+      [
+       15.675,
+       0.3,
+       3.15
+      ],
+      [
+       13.1,
+       0.3,
+       3.15
+      ]
+     ],
+     "radius": 0.022
+    },
+    {
+     "id": "AF-LAV",
+     "label": "Ramal lavanderia e cozinha",
+     "points": [
+      [
+       15.675,
+       0.3,
+       3.15
+      ],
+      [
+       15.675,
+       0.3,
+       0.125
+      ],
+      [
+       10.78,
+       0.3,
+       0.125
+      ]
+     ],
+     "radius": 0.022
+    },
+    {
+     "id": "AF-W-ENT",
+     "label": "Alimentação oeste",
+     "points": [
+      [
+       -0.3,
+       0.3,
+       3.75
+      ],
+      [
+       0.125,
+       0.3,
+       3.75
+      ],
+      [
+       2.0,
+       0.3,
+       3.75
+      ]
+     ],
+     "radius": 0.022
+    }
+   ],
+   "branches": [
+    [
+     15.2,
+     3.15
+    ],
+    [
+     14.6,
+     3.15
+    ],
+    [
+     13.78,
+     3.15
+    ],
+    [
+     15.0,
+     0.125
+    ],
+    [
+     13.72,
+     0.125
+    ],
+    [
+     10.78,
+     0.125
+    ],
+    [
+     0.7,
+     3.75
+    ],
+    [
+     1.4,
+     3.75
+    ],
+    [
+     1.95,
+     3.75
+    ]
+   ],
+   "branchY": 0.3
+  },
+  {
+   "id": "agua-quente",
+   "name": "Água quente",
+   "color": "#f08a24",
+   "icon": "flame",
+   "stage": [
+    0.1,
+    0.5
+   ],
+   "routes": [
+    {
+     "id": "AQ-LAV",
+     "label": "Aquecedor → cozinha",
+     "points": [
+      [
+       15.58,
+       0.42,
+       0.4
+      ],
+      [
+       15.58,
+       0.42,
+       0.19
+      ],
+      [
+       10.78,
+       0.42,
+       0.19
+      ]
+     ],
+     "radius": 0.022
+    },
+    {
+     "id": "AQ-BSU",
+     "label": "Aquecedor → banheiro da suíte",
+     "points": [
+      [
+       15.58,
+       0.42,
+       0.4
+      ],
+      [
+       15.58,
+       0.42,
+       3.19
+      ],
+      [
+       13.78,
+       0.42,
+       3.19
+      ]
+     ],
+     "radius": 0.022
+    },
+    {
+     "id": "AQ-BSO",
+     "label": "Aquecedor → banheiro social",
+     "points": [
+      [
+       0.3,
+       0.42,
+       3.6
+      ],
+      [
+       0.3,
+       0.42,
+       3.79
+      ],
+      [
+       1.95,
+       0.42,
+       3.79
+      ]
+     ],
+     "radius": 0.022
+    }
+   ],
+   "branches": [
+    [
+     10.78,
+     0.19
+    ],
+    [
+     13.78,
+     3.19
+    ],
+    [
+     15.2,
+     3.19
+    ],
+    [
+     0.7,
+     3.79
+    ],
+    [
+     1.95,
+     3.79
+    ]
+   ],
+   "branchY": 0.42
+  },
+  {
+   "id": "esgoto",
+   "name": "Esgoto",
+   "color": "#3f8f5b",
+   "icon": "drain",
+   "stage": [
+    0.0,
+    0.35
+   ],
+   "routes": [
+    {
+     "id": "ES-COZ",
+     "label": "Cozinha → caixa de inspeção norte",
+     "points": [
+      [
+       10.78,
+       -0.3,
+       0.45
+      ],
+      [
+       10.78,
+       -0.3,
+       -1.5
+      ]
+     ],
+     "radius": 0.04
+    },
+    {
+     "id": "ES-LAV",
+     "label": "Lavanderia → caixa de inspeção norte",
+     "points": [
+      [
+       15.0,
+       -0.3,
+       0.62
+      ],
+      [
+       13.72,
+       -0.3,
+       0.62
+      ],
+      [
+       13.72,
+       -0.3,
+       -1.5
+      ]
+     ],
+     "radius": 0.04
+    },
+    {
+     "id": "ES-BSU",
+     "label": "Banheiro da suíte → caixa leste",
+     "points": [
+      [
+       13.78,
+       -0.3,
+       3.75
+      ],
+      [
+       14.6,
+       -0.3,
+       3.75
+      ],
+      [
+       15.2,
+       -0.3,
+       3.75
+      ],
+      [
+       16.8,
+       -0.3,
+       3.75
+      ]
+     ],
+     "radius": 0.04
+    },
+    {
+     "id": "ES-BSO",
+     "label": "Banheiro social → caixa oeste",
+     "points": [
+      [
+       1.95,
+       -0.3,
+       3.95
+      ],
+      [
+       1.4,
+       -0.3,
+       4.05
+      ],
+      [
+       0.7,
+       -0.3,
+       4.45
+      ],
+      [
+       -1.2,
+       -0.3,
+       4.45
+      ]
+     ],
+     "radius": 0.04
+    }
+   ],
+   "branches": [],
+   "branchY": -0.3,
+   "devices": [
+    {
+     "id": "CI-N1",
+     "kind": "manhole",
+     "pos": [
+      10.78,
+      -0.45,
+      -1.5
+     ],
+     "label": "Caixa de inspeção (cozinha)"
+    },
+    {
+     "id": "CI-N2",
+     "kind": "manhole",
+     "pos": [
+      13.72,
+      -0.45,
+      -1.5
+     ],
+     "label": "Caixa de inspeção (lavanderia)"
+    },
+    {
+     "id": "CI-L",
+     "kind": "manhole",
+     "pos": [
+      16.8,
+      -0.45,
+      3.75
+     ],
+     "label": "Caixa de inspeção (suíte)"
+    },
+    {
+     "id": "CI-O",
+     "kind": "manhole",
+     "pos": [
+      -1.2,
+      -0.45,
+      4.45
+     ],
+     "label": "Caixa de inspeção (social)"
+    }
+   ]
+  },
+  {
+   "id": "eletrica",
+   "name": "Elétrica",
+   "color": "#e8c21a",
+   "icon": "bolt",
+   "stage": [
+    0.2,
+    0.7
+   ],
+   "routes": [
+    {
+     "id": "EL-QD",
+     "label": "Quadro → circuito social",
+     "points": [
+      [
+       3.2,
+       1.4,
+       9.5
+      ],
+      [
+       3.2,
+       2.55,
+       9.5
+      ],
+      [
+       3.61,
+       2.55,
+       9.5
+      ],
+      [
+       3.61,
+       2.55,
+       3.75
+      ],
+      [
+       3.4,
+       2.55,
+       3.75
+      ],
+      [
+       3.4,
+       2.55,
+       0.125
+      ],
+      [
+       13.1,
+       2.55,
+       0.125
+      ]
+     ],
+     "radius": 0.02
+    },
+    {
+     "id": "EL-OESTE",
+     "label": "Circuito ala oeste",
+     "points": [
+      [
+       3.4,
+       2.55,
+       3.75
+      ],
+      [
+       0.125,
+       2.55,
+       3.75
+      ],
+      [
+       0.125,
+       2.55,
+       9.5
+      ]
+     ],
+     "radius": 0.02
+    },
+    {
+     "id": "EL-LESTE",
+     "label": "Circuito ala leste e suíte",
+     "points": [
+      [
+       13.1,
+       2.55,
+       0.125
+      ],
+      [
+       15.675,
+       2.55,
+       0.125
+      ],
+      [
+       15.675,
+       2.55,
+       10.225
+      ],
+      [
+       11.15,
+       2.55,
+       10.225
+      ]
+     ],
+     "radius": 0.02
+    }
+   ],
+   "branches": [],
+   "branchY": 2.55,
+   "devices": [
+    {
+     "id": "QD",
+     "kind": "panel",
+     "pos": [
+      3.2,
+      1.4,
+      9.425
+     ],
+     "label": "Quadro de distribuição"
+    }
+   ]
+  },
+  {
+   "id": "clima",
+   "name": "Climatização",
+   "color": "#38bdd0",
+   "icon": "wind",
+   "stage": [
+    0.4,
+    0.9
+   ],
+   "routes": [
+    {
+     "id": "CL-SALA",
+     "label": "Linha frigorígena — sala",
+     "points": [
+      [
+       5.8,
+       2.4,
+       0.2
+      ],
+      [
+       5.8,
+       2.4,
+       -0.55
+      ]
+     ],
+     "radius": 0.03
+    },
+    {
+     "id": "CL-Q2",
+     "label": "Linha frigorígena — Quarto 2",
+     "points": [
+      [
+       1.7,
+       2.3,
+       0.2
+      ],
+      [
+       1.7,
+       2.3,
+       -0.55
+      ]
+     ],
+     "radius": 0.03
+    },
+    {
+     "id": "CL-SUI",
+     "label": "Linha frigorígena — suíte",
+     "points": [
+      [
+       11.9,
+       2.3,
+       10.1
+      ],
+      [
+       11.9,
+       2.3,
+       10.9
+      ]
+     ],
+     "radius": 0.03
+    }
+   ],
+   "branches": [],
+   "branchY": 2.4,
+   "devices": [
+    {
+     "id": "SP-SALA",
+     "kind": "split",
+     "pos": [
+      5.8,
+      2.4,
+      0.4
+     ],
+     "label": "Split da sala",
+     "rot": 0
+    },
+    {
+     "id": "SP-Q2",
+     "kind": "split",
+     "pos": [
+      1.7,
+      2.3,
+      0.4
+     ],
+     "label": "Split do Quarto 2",
+     "rot": 0
+    },
+    {
+     "id": "SP-SUI",
+     "kind": "split",
+     "pos": [
+      11.9,
+      2.3,
+      10.0
+     ],
+     "label": "Split da suíte",
+     "rot": 180
+    },
+    {
+     "id": "CD-SALA",
+     "kind": "condenser",
+     "pos": [
+      5.8,
+      0.3,
+      -0.8
+     ],
+     "label": "Condensadora (sala)",
+     "rot": 0
+    },
+    {
+     "id": "CD-Q2",
+     "kind": "condenser",
+     "pos": [
+      1.7,
+      0.3,
+      -0.8
+     ],
+     "label": "Condensadora (Quarto 2)",
+     "rot": 0
+    },
+    {
+     "id": "CD-SUI",
+     "kind": "condenser",
+     "pos": [
+      11.9,
+      0.3,
+      11.1
+     ],
+     "label": "Condensadora (suíte)",
+     "rot": 180
+    }
+   ]
+  }
+ ],
+ "cladding": [
+  {
+   "id": "RV-HALL-S",
+   "name": "Revestimento em ripas verticais — hall (sul)",
+   "wall": "P-HS",
+   "side": -1,
+   "from": 0.0,
+   "to": "L",
+   "y0": 0.0,
+   "y1": "top",
+   "orientation": "vertical"
+  },
+  {
+   "id": "RV-HALL-O",
+   "name": "Revestimento em ripas verticais — hall (oeste)",
+   "wall": "P-HO",
+   "side": -1,
+   "from": 0.0,
+   "to": "L",
+   "y0": 0.0,
+   "y1": "top",
+   "orientation": "vertical"
+  },
+  {
+   "id": "RV-HALL-L",
+   "name": "Revestimento em ripas verticais — hall (leste)",
+   "wall": "P-PO",
+   "side": -1,
+   "from": 4.1,
+   "to": "L",
+   "y0": 0.0,
+   "y1": "top",
+   "orientation": "vertical"
+  },
+  {
+   "id": "RV-VID-S",
+   "name": "Friso de madeira acima do vidro (lado do pátio)",
+   "wall": "P-VID",
+   "side": 1,
+   "from": 0.1,
+   "to": "L-0.20",
+   "y0": 2.5,
+   "y1": "top",
+   "orientation": "horizontal"
+  }
+ ],
+ "landscape": {
+  "beds": [
+   {
+    "id": "CT-FRENTE-ESQ",
+    "name": "Canteiro frontal esquerdo",
+    "polygon": [
+     [
+      -1.1,
+      9.7
+     ],
+     [
+      2.0,
+      9.7
+     ],
+     [
+      2.0,
+      11.0
+     ],
+     [
+      -1.1,
+      11.0
+     ]
+    ]
+   },
+   {
+    "id": "CT-OESTE",
+    "name": "Canteiro lateral oeste",
+    "polygon": [
+     [
+      -1.1,
+      0.6
+     ],
+     [
+      -0.2,
+      0.6
+     ],
+     [
+      -0.2,
+      9.7
+     ],
+     [
+      -1.1,
+      9.7
+     ]
+    ]
+   },
+   {
+    "id": "CT-FRENTE-PATIO",
+    "name": "Canteiro frontal do pátio",
+    "polygon": [
+     [
+      4.9,
+      10.7
+     ],
+     [
+      11.3,
+      10.7
+     ],
+     [
+      11.3,
+      12.0
+     ],
+     [
+      4.9,
+      12.0
+     ]
+    ]
+   },
+   {
+    "id": "CT-FRENTE-SUITE",
+    "name": "Canteiro frontal da suíte",
+    "polygon": [
+     [
+      11.5,
+      10.45
+     ],
+     [
+      16.9,
+      10.45
+     ],
+     [
+      16.9,
+      11.6
+     ],
+     [
+      11.5,
+      11.6
+     ]
+    ]
+   },
+   {
+    "id": "CT-LESTE",
+    "name": "Canteiro lateral leste",
+    "polygon": [
+     [
+      15.9,
+      0.8
+     ],
+     [
+      16.9,
+      0.8
+     ],
+     [
+      16.9,
+      10.45
+     ],
+     [
+      15.9,
+      10.45
+     ]
+    ]
+   },
+   {
+    "id": "CT-PATIO",
+    "name": "Canteiro interno do pátio",
+    "polygon": [
+     [
+      9.2,
+      8.6
+     ],
+     [
+      10.95,
+      8.6
+     ],
+     [
+      10.95,
+      9.95
+     ],
+     [
+      9.2,
+      9.95
+     ]
+    ]
+   }
+  ],
+  "plants": [
+   {
+    "x": -0.55,
+    "z": 10.35,
+    "kind": "arvore",
+    "s": 1.0
+   },
+   {
+    "x": 16.35,
+    "z": 11.0,
+    "kind": "arvore",
+    "s": 1.05
+   },
+   {
+    "x": 10.35,
+    "z": 9.25,
+    "kind": "arvore",
+    "s": 0.9
+   },
+   {
+    "x": 16.4,
+    "z": 1.7,
+    "kind": "arvore",
+    "s": 1.1
+   },
+   {
+    "x": -0.65,
+    "z": 1.6,
+    "kind": "arvore",
+    "s": 1.0
+   },
+   {
+    "x": 1.65,
+    "z": 10.45,
+    "kind": "arbusto",
+    "s": 0.79
+   },
+   {
+    "x": 0.65,
+    "z": 10.57,
+    "kind": "arbusto",
+    "s": 0.73
+   },
+   {
+    "x": 0.44,
+    "z": 10.09,
+    "kind": "arbusto",
+    "s": 1.0
+   },
+   {
+    "x": 1.12,
+    "z": 10.06,
+    "kind": "arbusto",
+    "s": 0.74
+   },
+   {
+    "x": 1.18,
+    "z": 10.72,
+    "kind": "arbusto",
+    "s": 1.14
+   },
+   {
+    "x": -0.67,
+    "z": 8.42,
+    "kind": "arbusto",
+    "s": 0.89
+   },
+   {
+    "x": -0.43,
+    "z": 6.14,
+    "kind": "arbusto",
+    "s": 0.72
+   },
+   {
+    "x": -0.69,
+    "z": 7.78,
+    "kind": "arbusto",
+    "s": 1.11
+   },
+   {
+    "x": -0.76,
+    "z": 2.46,
+    "kind": "arbusto",
+    "s": 1.16
+   },
+   {
+    "x": -0.52,
+    "z": 3.76,
+    "kind": "arbusto",
+    "s": 1.25
+   },
+   {
+    "x": -0.88,
+    "z": 4.84,
+    "kind": "arbusto",
+    "s": 0.91
+   },
+   {
+    "x": -0.59,
+    "z": 5.68,
+    "kind": "graminea",
+    "s": 0.67
+   },
+   {
+    "x": -0.88,
+    "z": 6.84,
+    "kind": "arbusto",
+    "s": 0.7
+   },
+   {
+    "x": 10.68,
+    "z": 11.27,
+    "kind": "graminea",
+    "s": 0.95
+   },
+   {
+    "x": 5.17,
+    "z": 11.07,
+    "kind": "graminea",
+    "s": 0.74
+   },
+   {
+    "x": 9.51,
+    "z": 11.14,
+    "kind": "arbusto",
+    "s": 1.27
+   },
+   {
+    "x": 6.57,
+    "z": 11.5,
+    "kind": "arbusto",
+    "s": 1.24
+   },
+   {
+    "x": 5.85,
+    "z": 11.19,
+    "kind": "arbusto",
+    "s": 0.88
+   },
+   {
+    "x": 8.62,
+    "z": 11.13,
+    "kind": "graminea",
+    "s": 0.85
+   },
+   {
+    "x": 7.5,
+    "z": 11.67,
+    "kind": "arbusto",
+    "s": 1.01
+   },
+   {
+    "x": 7.99,
+    "z": 11.18,
+    "kind": "arbusto",
+    "s": 0.83
+   },
+   {
+    "x": 8.25,
+    "z": 11.77,
+    "kind": "graminea",
+    "s": 0.99
+   },
+   {
+    "x": 5.14,
+    "z": 11.56,
+    "kind": "arbusto",
+    "s": 1.24
+   },
+   {
+    "x": 7.21,
+    "z": 10.96,
+    "kind": "arbusto",
+    "s": 0.8
+   },
+   {
+    "x": 14.61,
+    "z": 11.23,
+    "kind": "graminea",
+    "s": 0.61
+   },
+   {
+    "x": 12.85,
+    "z": 10.7,
+    "kind": "graminea",
+    "s": 0.75
+   },
+   {
+    "x": 13.0,
+    "z": 11.32,
+    "kind": "arbusto",
+    "s": 1.14
+   },
+   {
+    "x": 13.59,
+    "z": 10.8,
+    "kind": "graminea",
+    "s": 0.74
+   },
+   {
+    "x": 11.82,
+    "z": 11.28,
+    "kind": "graminea",
+    "s": 0.96
+   },
+   {
+    "x": 14.88,
+    "z": 10.89,
+    "kind": "arbusto",
+    "s": 1.24
+   },
+   {
+    "x": 13.92,
+    "z": 11.26,
+    "kind": "arbusto",
+    "s": 1.2
+   },
+   {
+    "x": 16.56,
+    "z": 4.04,
+    "kind": "arbusto",
+    "s": 1.16
+   },
+   {
+    "x": 16.51,
+    "z": 6.62,
+    "kind": "arbusto",
+    "s": 0.98
+   },
+   {
+    "x": 16.42,
+    "z": 2.84,
+    "kind": "arbusto",
+    "s": 1.22
+   },
+   {
+    "x": 16.67,
+    "z": 9.86,
+    "kind": "arbusto",
+    "s": 1.28
+   },
+   {
+    "x": 16.43,
+    "z": 7.87,
+    "kind": "graminea",
+    "s": 0.76
+   },
+   {
+    "x": 16.57,
+    "z": 5.83,
+    "kind": "arbusto",
+    "s": 0.71
+   },
+   {
+    "x": 16.44,
+    "z": 5.02,
+    "kind": "arbusto",
+    "s": 1.03
+   },
+   {
+    "x": 16.54,
+    "z": 8.54,
+    "kind": "arbusto",
+    "s": 0.82
+   },
+   {
+    "x": 16.23,
+    "z": 9.04,
+    "kind": "graminea",
+    "s": 0.8
+   },
+   {
+    "x": 16.12,
+    "z": 5.59,
+    "kind": "arbusto",
+    "s": 1.02
+   },
+   {
+    "x": 16.23,
+    "z": 7.33,
+    "kind": "graminea",
+    "s": 0.62
+   },
+   {
+    "x": 9.47,
+    "z": 9.22,
+    "kind": "arbusto",
+    "s": 0.73
+   },
+   {
+    "x": 9.46,
+    "z": 9.71,
+    "kind": "arbusto",
+    "s": 0.97
+   }
+  ],
+  "paths": [
+   {
+    "id": "CAM-ENTRADA",
+    "name": "Calçada de acesso ao hall",
+    "polygon": [
+     [
+      3.05,
+      12.2
+     ],
+     [
+      4.05,
+      12.2
+     ],
+     [
+      4.05,
+      17.5
+     ],
+     [
+      3.05,
+      17.5
+     ]
+    ],
+    "material": "concreto-claro"
+   },
+   {
+    "id": "PLAT-FRENTE",
+    "name": "Piso externo frontal",
+    "polygon": [
+     [
+      -1.5,
+      12.2
+     ],
+     [
+      5.2,
+      12.2
+     ],
+     [
+      5.2,
+      14.0
+     ],
+     [
+      -1.5,
+      14.0
+     ]
+    ],
+    "material": "concreto-claro"
+   },
+   {
+    "id": "GARAGEM",
+    "name": "Área de manobra / garagem",
+    "polygon": [
+     [
+      -11.0,
+      14.0
+     ],
+     [
+      5.2,
+      14.0
+     ],
+     [
+      5.2,
+      24.0
+     ],
+     [
+      -11.0,
+      24.0
+     ]
+    ],
+    "material": "concreto-garagem"
+   }
+  ]
+ },
+ "annotations": [
+  {
+   "id": "AN-FUND",
+   "text": "Sapata corrida",
+   "layer": "fundacao",
+   "at": [
+    7.9,
+    -0.35,
+    12.5
+   ],
+   "stage": 0,
+   "element": null
+  },
+  {
+   "id": "AN-RADIER",
+   "text": "Radier (laje de piso)",
+   "layer": "fundacao",
+   "at": [
+    7.9,
+    -0.07,
+    2.6
+   ],
+   "stage": 0,
+   "element": null
+  },
+  {
+   "id": "AN-PIL",
+   "text": "Pilar de concreto (esquemático)",
+   "layer": "estrutura",
+   "at": [
+    15.675,
+    1.8,
+    0.125
+   ],
+   "stage": 1,
+   "element": null
+  },
+  {
+   "id": "AN-CINTA",
+   "text": "Cinta superior",
+   "layer": "estrutura",
+   "at": [
+    9.4,
+    4.6,
+    0.125
+   ],
+   "stage": 1,
+   "element": null
+  },
+  {
+   "id": "AN-CAIBRO",
+   "text": "Caibros / estrutura da cobertura",
+   "layer": "estrutura",
+   "at": [
+    7.0,
+    4.2,
+    2.8
+   ],
+   "stage": 1,
+   "element": null
+  },
+  {
+   "id": "AN-AF",
+   "text": "Água fria",
+   "layer": "instalacoes",
+   "at": [
+    14.3,
+    0.32,
+    3.15
+   ],
+   "stage": 2,
+   "element": null
+  },
+  {
+   "id": "AN-ES",
+   "text": "Esgoto",
+   "layer": "instalacoes",
+   "at": [
+    10.78,
+    -0.3,
+    -0.9
+   ],
+   "stage": 2,
+   "element": null
+  },
+  {
+   "id": "AN-EL",
+   "text": "Elétrica (circuito ilustrativo)",
+   "layer": "instalacoes",
+   "at": [
+    6.5,
+    2.55,
+    0.125
+   ],
+   "stage": 2,
+   "element": null
+  },
+  {
+   "id": "AN-QD",
+   "text": "Quadro de distribuição",
+   "layer": "instalacoes",
+   "at": [
+    3.2,
+    1.4,
+    9.425
+   ],
+   "stage": 2,
+   "element": null
+  },
+  {
+   "id": "AN-PAREDE",
+   "text": "Alvenaria com reboco",
+   "layer": "alvenaria",
+   "at": [
+    15.675,
+    2.0,
+    5.0
+   ],
+   "stage": 3,
+   "element": "P-L"
+  },
+  {
+   "id": "AN-VIDRO",
+   "text": "Esquadria de correr — sala/pátio",
+   "layer": "esquadrias",
+   "at": [
+    7.9,
+    1.2,
+    5.5
+   ],
+   "stage": 3,
+   "element": null
+  },
+  {
+   "id": "AN-COB",
+   "text": "Cobertura metálica (uma água)",
+   "layer": "cobertura",
+   "at": [
+    8.0,
+    4.0,
+    1.5
+   ],
+   "stage": 3,
+   "element": null
+  },
+  {
+   "id": "AN-CUM",
+   "text": "Cumeeira — ponto mais alto (4,90 m)",
+   "layer": "cobertura",
+   "at": [
+    8.0,
+    4.9,
+    0.0
+   ],
+   "stage": 3,
+   "element": null
+  },
+  {
+   "id": "AN-ENT",
+   "text": "Porta de entrada em madeira",
+   "layer": "esquadrias",
+   "at": [
+    3.95,
+    1.1,
+    12.2
+   ],
+   "stage": 3,
+   "element": null
+  },
+  {
+   "id": "AN-PATIO",
+   "text": "Pátio / varanda central (descoberto)",
+   "layer": "acabamentos",
+   "at": [
+    7.9,
+    0.05,
+    8.0
+   ],
+   "stage": 4,
+   "element": null
+  },
+  {
+   "id": "AN-SOFA",
+   "text": "Sofá em L (sugestão)",
+   "layer": "mobiliario",
+   "at": [
+    5.5,
+    0.9,
+    2.2
+   ],
+   "stage": 4,
+   "element": "M-SALA-SOFA"
+  }
+ ],
+ "assumptions": [
+  {
+   "id": "H-01",
+   "text": "Pé-direito de 2,80 m e cumeeira máxima de 4,90 m foram lidos das cotas das quatro fachadas (confirmado), mas a altura de cada trecho de parede é calculada pelo plano do telhado (estimado)."
+  },
+  {
+   "id": "H-02",
+   "text": "Espessuras de parede: 25 cm externas, 12–15 cm internas (estimadas; o desenho exagera a espessura)."
+  },
+  {
+   "id": "H-03",
+   "text": "Desenho da planta tem escala diferente em X e Z. Mantive as cotas totais (15,80 × 12,20 m) e as posições do desenho; a imagem de referência usa duas escalas."
+  },
+  {
+   "id": "H-04",
+   "text": "Cotas internas das salas e quartos (ex.: lavanderia 2,60 × 2,10 m) divergem do desenho em até ~0,8 m. O modelo segue as posições das paredes no desenho; a cota nominal aparece ao lado da área calculada."
+  },
+  {
+   "id": "H-05",
+   "text": "A soma das cotas laterais esquerdas (3,20 + 1,70 + 3,10 + 2,00 = 10,00 m) não fecha com a cota total de 12,20 m. Prevaleceu a cota total."
+  },
+  {
+   "id": "H-06",
+   "text": "O hall de entrada não tem passagem desenhada para o restante da casa. Foi incluída uma porta ESTIMADA (0,80 m) na parede hall → circulação para permitir a navegação."
+  },
+  {
+   "id": "H-07",
+   "text": "Inclinações: a planta de cobertura indica 10% em todos os planos; o volume central usa ≈17% (ficha: 8–10°) para chegar à cota de 4,90 m. Ajustável em Parâmetros."
+  },
+  {
+   "id": "H-08",
+   "text": "Fundação (sapata corrida + radier), pilares, cintas e caibros são ESQUEMÁTICOS — nada disso consta da planta."
+  },
+  {
+   "id": "H-09",
+   "text": "Instalações (água fria/quente, esgoto, elétrica, climatização) são trajetos ESQUEMÁTICOS para demonstrar o recurso; sem bitolas, cargas ou vazões."
+  },
+  {
+   "id": "H-10",
+   "text": "Mobiliário e louças seguem a planta mobiliada (posições aproximadas), em geometria simples; é sugestão visual."
+  },
+  {
+   "id": "H-11",
+   "text": "Alturas de peitoril/vergas das janelas foram lidas das fachadas quando possível; as demais são estimadas."
+  },
+  {
+   "id": "H-12",
+   "text": "Muro baixo do pátio (1,10 m), paisagismo e piso externo vêm da ficha e das fachadas — não estão na planta baixa."
+  }
+ ]
+}
